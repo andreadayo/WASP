@@ -1,0 +1,12 @@
+wasp.nl=id
+wasp.mrl=geo-funql
+wasp.mrl.grammar=/home/yanyan/projects/statnlp-sp/EfficientHybridTree/baseline/wasp-1.0/src/data/geo-funql/mrl-grammar
+wasp.corpus.file=/home/yanyan/projects/statnlp-sp/EfficientHybridTree/baseline/wasp-1.0/src/data/geo-funql/corpus_id.xml
+wasp.align.model=giza++
+wasp.align.giza++.exec=/home/yanyan/projects/statnlp-sp/giza-pp/GIZA++-v2/GIZA++
+wasp.translation.model=scfg
+wasp.scfg.init=/home/yanyan/projects/statnlp-sp/EfficientHybridTree/baseline/wasp-1.0/src/data/geo-funql/scfg-init-rules
+wasp.kbest=1
+wasp.domain.geo.names=/home/yanyan/projects/statnlp-sp/EfficientHybridTree/baseline/wasp-1.0/src/data/geo-funql/entity-names
+wasp.domain.geo.eval.dir=/home/yanyan/projects/statnlp-sp/EfficientHybridTree/baseline/wasp-1.0/src/data/geo-funql/geo-funql/eval
+wasp.sicstus.exec=swipl
