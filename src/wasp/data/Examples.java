@@ -21,7 +21,10 @@ package wasp.data;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.Map;
@@ -33,6 +36,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.Attributes;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
@@ -54,24 +58,31 @@ import wasp.util.Int;
 public class Examples {
 
 	private static Logger logger = Logger.getLogger(Examples.class.getName());
-	
+
 	private class ExampleIterator implements Iterator {
 		private Iterator it;
+
 		public ExampleIterator() {
 			it = map.values().iterator();
 		}
+
+		@Override
 		public boolean hasNext() {
 			return it.hasNext();
 		}
+
+		@Override
 		public Object next() {
 			return it.next();
 		}
+
+		@Override
 		public void remove() {
 			it.remove();
 			ids = null;
 		}
 	}
-	
+
 	private TreeMap map;
 	private Int[] ids;
 
@@ -79,41 +90,44 @@ public class Examples {
 		map = new TreeMap();
 		ids = null;
 	}
-	
+
 	public Iterator iterator() {
 		return new ExampleIterator();
 	}
-	
+
 	public Example get(int id) {
 		return (Example) map.get(new Int(id));
 	}
-	
+
 	public Example getNth(int n) {
 		if (ids == null)
 			ids = (Int[]) map.keySet().toArray(new Int[0]);
 		return (Example) map.get(ids[n]);
 	}
-	
+
 	public int size() {
 		return map.size();
 	}
-	
+
 	public void add(Example ex) {
 		map.put(new Int(ex.id), ex);
 		ids = null;
 	}
-	
+
 	///
 	/// File I/O
 	///
-	
-	public void read(String filename)
-	throws IOException, SAXException, ParserConfigurationException {
+
+	public void read(String filename) throws IOException, SAXException, ParserConfigurationException {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		factory.setValidating(false);
 		factory.setNamespaceAware(false);
 		SAXParser parser = factory.newSAXParser();
-		parser.parse(new File(filename), new ExampleHandler());
+		File file = new File(filename);
+		InputStream inputStream = new FileInputStream(file);
+		InputStreamReader reader = new InputStreamReader(inputStream, "UTF-8");
+		InputSource is = new InputSource(reader);
+		parser.parse(is, new ExampleHandler());
 	}
 
 	private class ExampleHandler extends DefaultHandler {
@@ -122,42 +136,48 @@ public class Examples {
 		private int nodeId;
 		private double score;
 		private StringBuffer buf;
+
+		@Override
 		public void startElement(String uri, String localName, String qName, Attributes attributes) {
 			if (qName.equalsIgnoreCase("example")) {
 				ex = new Example();
 				ex.id = Int.parseInt(attributes.getValue("id"));
-				logger.finest("example "+ex.id);
+				logger.finest("example " + ex.id);
 			} else if (qName.equalsIgnoreCase("nl")) {
 				lang = attributes.getValue("lang");
 				buf = new StringBuffer();
-				logger.finest("nl "+lang);
+				logger.finest("nl " + lang);
 			} else if (qName.equalsIgnoreCase("syn")) {
 				lang = attributes.getValue("lang");
 				buf = new StringBuffer();
-				logger.finest("syn "+lang);
+				logger.finest("syn " + lang);
 			} else if (qName.equalsIgnoreCase("augsyn")) {
 				lang = attributes.getValue("lang");
 				buf = new StringBuffer();
-				logger.finest("augsyn "+lang);
+				logger.finest("augsyn " + lang);
 			} else if (qName.equalsIgnoreCase("mrl")) {
 				lang = attributes.getValue("lang");
 				buf = new StringBuffer();
-				logger.finest("mrl "+lang);
+				logger.finest("mrl " + lang);
 			} else if (qName.equalsIgnoreCase("node")) {
 				nodeId = Int.parseInt(attributes.getValue("id"));
 				buf = new StringBuffer();
-				logger.finest("mrl-parse node "+nodeId);
+				logger.finest("mrl-parse node " + nodeId);
 			} else if (qName.equalsIgnoreCase("parse")) {
 				String attr = attributes.getValue("score");
-				score = (attr==null) ? 0 : Double.parseDouble(attr);
+				score = (attr == null) ? 0 : Double.parseDouble(attr);
 				buf = new StringBuffer();
 				logger.finest("parse");
 			}
 		}
+
+		@Override
 		public void characters(char[] text, int start, int length) {
 			if (buf != null)
 				buf.append(text, start, length);
 		}
+
+		@Override
 		public void endElement(String uri, String localName, String qName) {
 			if (qName.equalsIgnoreCase("nl")) {
 				String nl = buf.toString().trim();
@@ -174,7 +194,7 @@ public class Examples {
 				if (lang.equals(Config.getMRL())) {
 					ex.F = new Meaning(mrl);
 					if (ex.F.parse == null)
-						logger.warning("example "+ex.id+": MR is not grammatical");
+						logger.warning("example " + ex.id + ": MR is not grammatical");
 				}
 			} else if (qName.equalsIgnoreCase("node")) {
 				String[] line = Arrays.tokenize(buf.toString().trim());
@@ -183,7 +203,7 @@ public class Examples {
 				if (index.val == line.length)
 					ex.Fparse.add(prod);
 				else
-					logger.warning("example "+ex.id+": node "+nodeId+" of MR parse is invalid");
+					logger.warning("example " + ex.id + ": node " + nodeId + " of MR parse is invalid");
 			} else if (qName.equalsIgnoreCase("parse"))
 				ex.parses.add(new Parse(buf.toString().trim(), score));
 			else if (qName.equalsIgnoreCase("example")) {
@@ -207,7 +227,7 @@ public class Examples {
 		writeFooter(out);
 		out.close();
 	}
-	
+
 	private static void writeHeader(PrintWriter out) throws IOException {
 		out.println("<?xml version=\"1.0\"?>");
 		out.println("<!DOCTYPE examples [");
@@ -224,14 +244,14 @@ public class Examples {
 		out.println("<examples>");
 		out.println();
 	}
-	
+
 	private static void write(PrintWriter out, Example ex) throws IOException {
-		out.println("<example id=\""+ex.id+"\">");
+		out.println("<example id=\"" + ex.id + "\">");
 		for (Iterator it = ex.nlMap.entrySet().iterator(); it.hasNext();) {
 			Map.Entry entry = (Map.Entry) it.next();
 			String lang = (String) entry.getKey();
 			String nl = (String) entry.getValue();
-			out.println("<nl lang=\""+lang+"\">");
+			out.println("<nl lang=\"" + lang + "\">");
 			out.println(nl);
 			out.println("</nl>");
 		}
@@ -240,7 +260,7 @@ public class Examples {
 				Map.Entry entry = (Map.Entry) it.next();
 				String lang = (String) entry.getKey();
 				String nl = (String) entry.getValue();
-				out.println("<syn lang=\""+lang+"\">");
+				out.println("<syn lang=\"" + lang + "\">");
 				out.println(nl);
 				out.println("</syn>");
 			}
@@ -249,7 +269,7 @@ public class Examples {
 				Map.Entry entry = (Map.Entry) it.next();
 				String lang = (String) entry.getKey();
 				String nl = (String) entry.getValue();
-				out.println("<augsyn lang=\""+lang+"\">");
+				out.println("<augsyn lang=\"" + lang + "\">");
 				out.println(nl);
 				out.println("</augsyn>");
 			}
@@ -258,14 +278,14 @@ public class Examples {
 				Map.Entry entry = (Map.Entry) it.next();
 				String lang = (String) entry.getKey();
 				String mrl = (String) entry.getValue();
-				out.println("<mrl lang=\""+lang+"\">");
+				out.println("<mrl lang=\"" + lang + "\">");
 				out.println(mrl);
 				out.println("</mrl>");
 			}
 		if (writeMRLParse) {
 			out.println("<mrl-parse>");
 			for (short i = 0; i < ex.F.lprods.length; ++i) {
-				out.print("<node id=\""+i+"\"> ");
+				out.print("<node id=\"" + i + "\"> ");
 				out.print(ex.F.lprods[i]);
 				out.println(" </node>");
 			}
@@ -276,11 +296,11 @@ public class Examples {
 			for (int j = 0; j < parses.length; ++j) {
 				String str = parses[j].toStr();
 				if (str == null) {
-					logger.finer("example "+ex.id+" parse "+j+" is bad");
+					logger.finer("example " + ex.id + " parse " + j + " is bad");
 					continue;
 				}
-				logger.finer("example "+ex.id+" parse "+j);
-				out.println("<parse rank=\""+j+"\" score=\""+parses[j].score+"\">");
+				logger.finer("example " + ex.id + " parse " + j);
+				out.println("<parse rank=\"" + j + "\" score=\"" + parses[j].score + "\">");
 				out.println(str);
 				out.println("</parse>");
 				Node tree = parses[j].toTree();
@@ -294,9 +314,9 @@ public class Examples {
 		out.println("</example>");
 		out.println();
 	}
-	
+
 	private static void writeFooter(PrintWriter out) throws IOException {
 		out.println("</examples>");
 	}
-	
+
 }
