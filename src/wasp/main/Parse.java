@@ -33,19 +33,18 @@ public class Parse implements Comparable {
 	public String str;
 	/** The score of this parse. */
 	public double score;
-
+	
 	public Parse(String str, double score) {
 		this.str = str;
 		this.score = score;
 	}
-
+	
 	protected Parse(double score) {
 		this(null, score);
 	}
-
+	
 	/**
-	 * Parses with higher scores are ranked higher. This ordering is <i>not</i>
-	 * consistent with equals
+	 * Parses with higher scores are ranked higher.  This ordering is <i>not</i> consistent with equals
 	 * because distinct parses with equal scores should not be treated as equal.
 	 */
 	public int compareTo(Object o) {
@@ -65,16 +64,15 @@ public class Parse implements Comparable {
 	public Node toTree() {
 		return null;
 	}
-
+	
 	/**
-	 * Returns the string representation of this parse. For parsing, the string
-	 * returned is a meaning
-	 * representation. For realization, the string returned is an NL sentence.
+	 * Returns the string representation of this parse.  For parsing, the string returned is a meaning
+	 * representation.  For realization, the string returned is an NL sentence.
 	 * 
 	 * @return the string representation of this parse.
 	 */
 	public String toStr() {
 		return str;
 	}
-
+	
 }
