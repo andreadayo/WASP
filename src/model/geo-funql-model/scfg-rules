@@ -1,0 +1,956 @@
+*n:CityName -> ({ abilene })({ ' abilene ' }) weight 0.0
+*n:CityName -> ({ abingdon })({ ' abingdon ' }) weight 0.0
+*n:CityName -> ({ akron })({ ' akron ' }) weight 0.0
+*n:CityName -> ({ alameda })({ ' alameda ' }) weight 0.0
+*n:CityName -> ({ albany })({ ' albany ' }) weight 0.0
+*n:CityName -> ({ albuquerque })({ ' albuquerque ' }) weight 0.0
+*n:CityName -> ({ alexandria })({ ' alexandria ' }) weight 0.0
+*n:CityName -> ({ alhambra })({ ' alhambra ' }) weight 0.0
+*n:CityName -> ({ allentown })({ ' allentown ' }) weight 0.0
+*n:CityName -> ({ altoona })({ ' altoona ' }) weight 0.0
+*n:CityName -> ({ amarillo })({ ' amarillo ' }) weight 0.0
+*n:CityName -> ({ anaheim })({ ' anaheim ' }) weight 0.0
+*n:CityName -> ({ anchorage })({ ' anchorage ' }) weight 0.0
+*n:CityName -> ({ anderson })({ ' anderson ' }) weight 0.0
+*n:CityName -> ({ ann arbor })({ ' ann arbor ' }) weight 0.0
+*n:CityName -> ({ appleton })({ ' appleton ' }) weight 0.0
+*n:CityName -> ({ arlington })({ ' arlington ' }) weight 0.0
+*n:CityName -> ({ arlington heights })({ ' arlington heights ' }) weight 0.0
+*n:CityName -> ({ arvada })({ ' arvada ' }) weight 0.0
+*n:CityName -> ({ atlanta })({ ' atlanta ' }) weight 0.0
+*n:CityName -> ({ aurora })({ ' aurora ' }) weight 0.0
+*n:CityName -> ({ austin })({ ' austin ' }) weight 0.0
+*n:CityName -> ({ bakersfield })({ ' bakersfield ' }) weight 0.0
+*n:CityName -> ({ baltimore })({ ' baltimore ' }) weight 0.0
+*n:CityName -> ({ baton rouge })({ ' baton rouge ' }) weight 0.0
+*n:CityName -> ({ bayonne })({ ' bayonne ' }) weight 0.0
+*n:CityName -> ({ beaumont })({ ' beaumont ' }) weight 0.0
+*n:CityName -> ({ bellevue })({ ' bellevue ' }) weight 0.0
+*n:CityName -> ({ berkeley })({ ' berkeley ' }) weight 0.0
+*n:CityName -> ({ bethesda })({ ' bethesda ' }) weight 0.0
+*n:CityName -> ({ bethlehem })({ ' bethlehem ' }) weight 0.0
+*n:CityName -> ({ billings })({ ' billings ' }) weight 0.0
+*n:CityName -> ({ birmingham })({ ' birmingham ' }) weight 0.0
+*n:CityName -> ({ bloomington })({ ' bloomington ' }) weight 0.0
+*n:CityName -> ({ boise })({ ' boise ' }) weight 0.0
+*n:CityName -> ({ boston })({ ' boston ' }) weight 0.0
+*n:CityName -> ({ boulder })({ ' boulder ' }) weight 0.0
+*n:CityName -> ({ bridgeport })({ ' bridgeport ' }) weight 0.0
+*n:CityName -> ({ bristol })({ ' bristol ' }) weight 0.0
+*n:CityName -> ({ bristol township })({ ' bristol township ' }) weight 0.0
+*n:CityName -> ({ brockton })({ ' brockton ' }) weight 0.0
+*n:CityName -> ({ brownsville })({ ' brownsville ' }) weight 0.0
+*n:CityName -> ({ buena park })({ ' buena park ' }) weight 0.0
+*n:CityName -> ({ buffalo })({ ' buffalo ' }) weight 0.0
+*n:CityName -> ({ burbank })({ ' burbank ' }) weight 0.0
+*n:CityName -> ({ cambridge })({ ' cambridge ' }) weight 0.0
+*n:CityName -> ({ camden })({ ' camden ' }) weight 0.0
+*n:CityName -> ({ canton })({ ' canton ' }) weight 0.0
+*n:CityName -> ({ carson })({ ' carson ' }) weight 0.0
+*n:CityName -> ({ casper })({ ' casper ' }) weight 0.0
+*n:CityName -> ({ cedar rapids })({ ' cedar rapids ' }) weight 0.0
+*n:CityName -> ({ champaign })({ ' champaign ' }) weight 0.0
+*n:CityName -> ({ charleston })({ ' charleston ' }) weight 0.0
+*n:CityName -> ({ charlotte })({ ' charlotte ' }) weight 0.0
+*n:CityName -> ({ chattanooga })({ ' chattanooga ' }) weight 0.0
+*n:CityName -> ({ cheektowaga })({ ' cheektowaga ' }) weight 0.0
+*n:CityName -> ({ cherry hill })({ ' cherry hill ' }) weight 0.0
+*n:CityName -> ({ chesapeake })({ ' chesapeake ' }) weight 0.0
+*n:CityName -> ({ chicago })({ ' chicago ' }) weight 0.0
+*n:CityName -> ({ chula vista })({ ' chula vista ' }) weight 0.0
+*n:CityName -> ({ cicero })({ ' cicero ' }) weight 0.0
+*n:CityName -> ({ cincinnati })({ ' cincinnati ' }) weight 0.0
+*n:CityName -> ({ citrus heights })({ ' citrus heights ' }) weight 0.0
+*n:CityName -> ({ clearwater })({ ' clearwater ' }) weight 0.0
+*n:CityName -> ({ cleveland })({ ' cleveland ' }) weight 0.0
+*n:CityName -> ({ clifton })({ ' clifton ' }) weight 0.0
+*n:CityName -> ({ clinton })({ ' clinton ' }) weight 0.0
+*n:CityName -> ({ colorado springs })({ ' colorado springs ' }) weight 0.0
+*n:CityName -> ({ columbia })({ ' columbia ' }) weight 0.0
+*n:CityName -> ({ columbus })({ ' columbus ' }) weight 0.0
+*n:CityName -> ({ compton })({ ' compton ' }) weight 0.0
+*n:CityName -> ({ concord })({ ' concord ' }) weight 0.0
+*n:CityName -> ({ corpus christi })({ ' corpus christi ' }) weight 0.0
+*n:CityName -> ({ costa mesa })({ ' costa mesa ' }) weight 0.0
+*n:CityName -> ({ cranston })({ ' cranston ' }) weight 0.0
+*n:CityName -> ({ dallas })({ ' dallas ' }) weight 0.0
+*n:CityName -> ({ daly city })({ ' daly city ' }) weight 0.0
+*n:CityName -> ({ danbury })({ ' danbury ' }) weight 0.0
+*n:CityName -> ({ davenport })({ ' davenport ' }) weight 0.0
+*n:CityName -> ({ dayton })({ ' dayton ' }) weight 0.0
+*n:CityName -> ({ dearborn })({ ' dearborn ' }) weight 0.0
+*n:CityName -> ({ dearborn heights })({ ' dearborn heights ' }) weight 0.0
+*n:CityName -> ({ decatur })({ ' decatur ' }) weight 0.0
+*n:CityName -> ({ denver })({ ' denver ' }) weight 0.0
+*n:CityName -> ({ des moines })({ ' des moines ' }) weight 0.0
+*n:CityName -> ({ detroit })({ ' detroit ' }) weight 0.0
+*n:CityName -> ({ dover })({ ' dover ' }) weight 0.0
+*n:CityName -> ({ downey })({ ' downey ' }) weight 0.0
+*n:CityName -> ({ dubuque })({ ' dubuque ' }) weight 0.0
+*n:CityName -> ({ duluth })({ ' duluth ' }) weight 0.0
+*n:CityName -> ({ dundalk })({ ' dundalk ' }) weight 0.0
+*n:CityName -> ({ durham })({ ' durham ' }) weight 0.0
+*n:CityName -> ({ east los angeles })({ ' east los angeles ' }) weight 0.0
+*n:CityName -> ({ east orange })({ ' east orange ' }) weight 0.0
+*n:CityName -> ({ edison })({ ' edison ' }) weight 0.0
+*n:CityName -> ({ el cajon })({ ' el cajon ' }) weight 0.0
+*n:CityName -> ({ el monte })({ ' el monte ' }) weight 0.0
+*n:CityName -> ({ el paso })({ ' el paso ' }) weight 0.0
+*n:CityName -> ({ elgin })({ ' elgin ' }) weight 0.0
+*n:CityName -> ({ elizabeth })({ ' elizabeth ' }) weight 0.0
+*n:CityName -> ({ elyria })({ ' elyria ' }) weight 0.0
+*n:CityName -> ({ erie })({ ' erie ' }) weight 0.0
+*n:CityName -> ({ escondido })({ ' escondido ' }) weight 0.0
+*n:CityName -> ({ euclid })({ ' euclid ' }) weight 0.0
+*n:CityName -> ({ eugene })({ ' eugene ' }) weight 0.0
+*n:CityName -> ({ evanston })({ ' evanston ' }) weight 0.0
+*n:CityName -> ({ evansville })({ ' evansville ' }) weight 0.0
+*n:CityName -> ({ ewa })({ ' ewa ' }) weight 0.0
+*n:CityName -> ({ fairfield })({ ' fairfield ' }) weight 0.0
+*n:CityName -> ({ fall river })({ ' fall river ' }) weight 0.0
+*n:CityName -> ({ fargo })({ ' fargo ' }) weight 0.0
+*n:CityName -> ({ farmington hills })({ ' farmington hills ' }) weight 0.0
+*n:CityName -> ({ fayetteville })({ ' fayetteville ' }) weight 0.0
+*n:CityName -> ({ flint })({ ' flint ' }) weight 0.0
+*n:CityName -> ({ fort collins })({ ' fort collins ' }) weight 0.0
+*n:CityName -> ({ fort lauderdale })({ ' fort lauderdale ' }) weight 0.0
+*n:CityName -> ({ fort smith })({ ' fort smith ' }) weight 0.0
+*n:CityName -> ({ fort wayne })({ ' fort wayne ' }) weight 0.0
+*n:CityName -> ({ fort worth })({ ' fort worth ' }) weight 0.0
+*n:CityName -> ({ framingham })({ ' framingham ' }) weight 0.0
+*n:CityName -> ({ fremont })({ ' fremont ' }) weight 0.0
+*n:CityName -> ({ fresno })({ ' fresno ' }) weight 0.0
+*n:CityName -> ({ fullerton })({ ' fullerton ' }) weight 0.0
+*n:CityName -> ({ gainesville })({ ' gainesville ' }) weight 0.0
+*n:CityName -> ({ garden grove })({ ' garden grove ' }) weight 0.0
+*n:CityName -> ({ garland })({ ' garland ' }) weight 0.0
+*n:CityName -> ({ gary })({ ' gary ' }) weight 0.0
+*n:CityName -> ({ glendale })({ ' glendale ' }) weight 0.0
+*n:CityName -> ({ grand prairie })({ ' grand prairie ' }) weight 0.0
+*n:CityName -> ({ grand rapids })({ ' grand rapids ' }) weight 0.0
+*n:CityName -> ({ great falls })({ ' great falls ' }) weight 0.0
+*n:CityName -> ({ green bay })({ ' green bay ' }) weight 0.0
+*n:CityName -> ({ greensboro })({ ' greensboro ' }) weight 0.0
+*n:CityName -> ({ greenville })({ ' greenville ' }) weight 0.0
+*n:CityName -> ({ greenwich })({ ' greenwich ' }) weight 0.0
+*n:CityName -> ({ hamilton })({ ' hamilton ' }) weight 0.0
+*n:CityName -> ({ hammond })({ ' hammond ' }) weight 0.0
+*n:CityName -> ({ hampton })({ ' hampton ' }) weight 0.0
+*n:CityName -> ({ hartford })({ ' hartford ' }) weight 0.0
+*n:CityName -> ({ hayward })({ ' hayward ' }) weight 0.0
+*n:CityName -> ({ high point })({ ' high point ' }) weight 0.0
+*n:CityName -> ({ hollywood })({ ' hollywood ' }) weight 0.0
+*n:CityName -> ({ honolulu })({ ' honolulu ' }) weight 0.0
+*n:CityName -> ({ houston })({ ' houston ' }) weight 0.0
+*n:CityName -> ({ huntington })({ ' huntington ' }) weight 0.0
+*n:CityName -> ({ huntington beach })({ ' huntington beach ' }) weight 0.0
+*n:CityName -> ({ huntsville })({ ' huntsville ' }) weight 0.0
+*n:CityName -> ({ independence })({ ' independence ' }) weight 0.0
+*n:CityName -> ({ indianapolis })({ ' indianapolis ' }) weight 0.0
+*n:CityName -> ({ inglewood })({ ' inglewood ' }) weight 0.0
+*n:CityName -> ({ irondequoit })({ ' irondequoit ' }) weight 0.0
+*n:CityName -> ({ irvine })({ ' irvine ' }) weight 0.0
+*n:CityName -> ({ irving })({ ' irving ' }) weight 0.0
+*n:CityName -> ({ irvington })({ ' irvington ' }) weight 0.0
+*n:CityName -> ({ jackson })({ ' jackson ' }) weight 0.0
+*n:CityName -> ({ jacksonville })({ ' jacksonville ' }) weight 0.0
+*n:CityName -> ({ jersey city })({ ' jersey city ' }) weight 0.0
+*n:CityName -> ({ joliet })({ ' joliet ' }) weight 0.0
+*n:CityName -> ({ kalamazoo })({ ' kalamazoo ' }) weight 0.0
+*n:CityName -> ({ kansas city })({ ' kansas city ' }) weight 0.0
+*n:CityName -> ({ kendall })({ ' kendall ' }) weight 0.0
+*n:CityName -> ({ kenner })({ ' kenner ' }) weight 0.0
+*n:CityName -> ({ kenosha })({ ' kenosha ' }) weight 0.0
+*n:CityName -> ({ kettering })({ ' kettering ' }) weight 0.0
+*n:CityName -> ({ knoxville })({ ' knoxville ' }) weight 0.0
+*n:CityName -> ({ koolaupoko })({ ' koolaupoko ' }) weight 0.0
+*n:CityName -> ({ lafayette })({ ' lafayette ' }) weight 0.0
+*n:CityName -> ({ lake charles })({ ' lake charles ' }) weight 0.0
+*n:CityName -> ({ lakewood })({ ' lakewood ' }) weight 0.0
+*n:CityName -> ({ lansing })({ ' lansing ' }) weight 0.0
+*n:CityName -> ({ laredo })({ ' laredo ' }) weight 0.0
+*n:CityName -> ({ largo })({ ' largo ' }) weight 0.0
+*n:CityName -> ({ las vegas })({ ' las vegas ' }) weight 0.0
+*n:CityName -> ({ lawrence })({ ' lawrence ' }) weight 0.0
+*n:CityName -> ({ lawton })({ ' lawton ' }) weight 0.0
+*n:CityName -> ({ levittown })({ ' levittown ' }) weight 0.0
+*n:CityName -> ({ lexington })({ ' lexington ' }) weight 0.0
+*n:CityName -> ({ lincoln })({ ' lincoln ' }) weight 0.0
+*n:CityName -> ({ little rock })({ ' little rock ' }) weight 0.0
+*n:CityName -> ({ livonia })({ ' livonia ' }) weight 0.0
+*n:CityName -> ({ long beach })({ ' long beach ' }) weight 0.0
+*n:CityName -> ({ longview })({ ' longview ' }) weight 0.0
+*n:CityName -> ({ lorain })({ ' lorain ' }) weight 0.0
+*n:CityName -> ({ los angeles })({ ' los angeles ' }) weight 0.0
+*n:CityName -> ({ louisville })({ ' louisville ' }) weight 0.0
+*n:CityName -> ({ lowell })({ ' lowell ' }) weight 0.0
+*n:CityName -> ({ lower merion })({ ' lower merion ' }) weight 0.0
+*n:CityName -> ({ lubbock })({ ' lubbock ' }) weight 0.0
+*n:CityName -> ({ lynchburg })({ ' lynchburg ' }) weight 0.0
+*n:CityName -> ({ lynn })({ ' lynn ' }) weight 0.0
+*n:CityName -> ({ macon })({ ' macon ' }) weight 0.0
+*n:CityName -> ({ madison })({ ' madison ' }) weight 0.0
+*n:CityName -> ({ manchester })({ ' manchester ' }) weight 0.0
+*n:CityName -> ({ mcallen })({ ' mcallen ' }) weight 0.0
+*n:CityName -> ({ medford })({ ' medford ' }) weight 0.0
+*n:CityName -> ({ memphis })({ ' memphis ' }) weight 0.0
+*n:CityName -> ({ meriden })({ ' meriden ' }) weight 0.0
+*n:CityName -> ({ mesa })({ ' mesa ' }) weight 0.0
+*n:CityName -> ({ mesquite })({ ' mesquite ' }) weight 0.0
+*n:CityName -> ({ metairie })({ ' metairie ' }) weight 0.0
+*n:CityName -> ({ miami })({ ' miami ' }) weight 0.0
+*n:CityName -> ({ miami beach })({ ' miami beach ' }) weight 0.0
+*n:CityName -> ({ middletown })({ ' middletown ' }) weight 0.0
+*n:CityName -> ({ midland })({ ' midland ' }) weight 0.0
+*n:CityName -> ({ milwaukee })({ ' milwaukee ' }) weight 0.0
+*n:CityName -> ({ minneapolis })({ ' minneapolis ' }) weight 0.0
+*n:CityName -> ({ mobile })({ ' mobile ' }) weight 0.0
+*n:CityName -> ({ modesto })({ ' modesto ' }) weight 0.0
+*n:CityName -> ({ monroe })({ ' monroe ' }) weight 0.0
+*n:CityName -> ({ montgomery })({ ' montgomery ' }) weight 0.0
+*n:CityName -> ({ mount vernon })({ ' mount vernon ' }) weight 0.0
+*n:CityName -> ({ mountain view })({ ' mountain view ' }) weight 0.0
+*n:CityName -> ({ muncie })({ ' muncie ' }) weight 0.0
+*n:CityName -> ({ nashua })({ ' nashua ' }) weight 0.0
+*n:CityName -> ({ nashville })({ ' nashville ' }) weight 0.0
+*n:CityName -> ({ new bedford })({ ' new bedford ' }) weight 0.0
+*n:CityName -> ({ new britain })({ ' new britain ' }) weight 0.0
+*n:CityName -> ({ new haven })({ ' new haven ' }) weight 0.0
+*n:CityName -> ({ new orleans })({ ' new orleans ' }) weight 0.0
+*n:CityName -> ({ new rochelle })({ ' new rochelle ' }) weight 0.0
+*n:CityName -> ({ new york })({ ' new york ' }) weight 0.0
+*n:CityName -> ({ newark })({ ' newark ' }) weight 0.0
+*n:CityName -> ({ newport beach })({ ' newport beach ' }) weight 0.0
+*n:CityName -> ({ newport news })({ ' newport news ' }) weight 0.0
+*n:CityName -> ({ newton })({ ' newton ' }) weight 0.0
+*n:CityName -> ({ niagara falls })({ ' niagara falls ' }) weight 0.0
+*n:CityName -> ({ norfolk })({ ' norfolk ' }) weight 0.0
+*n:CityName -> ({ norman })({ ' norman ' }) weight 0.0
+*n:CityName -> ({ north charleston })({ ' north charleston ' }) weight 0.0
+*n:CityName -> ({ north little rock })({ ' north little rock ' }) weight 0.0
+*n:CityName -> ({ norwalk })({ ' norwalk ' }) weight 0.0
+*n:CityName -> ({ oak lawn })({ ' oak lawn ' }) weight 0.0
+*n:CityName -> ({ oakland })({ ' oakland ' }) weight 0.0
+*n:CityName -> ({ oceanside })({ ' oceanside ' }) weight 0.0
+*n:CityName -> ({ odessa })({ ' odessa ' }) weight 0.0
+*n:CityName -> ({ ogden })({ ' ogden ' }) weight 0.0
+*n:CityName -> ({ oklahoma city })({ ' oklahoma city ' }) weight 0.0
+*n:CityName -> ({ omaha })({ ' omaha ' }) weight 0.0
+*n:CityName -> ({ ontario })({ ' ontario ' }) weight 0.0
+*n:CityName -> ({ orange })({ ' orange ' }) weight 0.0
+*n:CityName -> ({ orlando })({ ' orlando ' }) weight 0.0
+*n:CityName -> ({ overland park })({ ' overland park ' }) weight 0.0
+*n:CityName -> ({ oxnard })({ ' oxnard ' }) weight 0.0
+*n:CityName -> ({ parma })({ ' parma ' }) weight 0.0
+*n:CityName -> ({ pasadena })({ ' pasadena ' }) weight 0.0
+*n:CityName -> ({ paterson })({ ' paterson ' }) weight 0.0
+*n:CityName -> ({ pawtucket })({ ' pawtucket ' }) weight 0.0
+*n:CityName -> ({ penn hills })({ ' penn hills ' }) weight 0.0
+*n:CityName -> ({ pensacola })({ ' pensacola ' }) weight 0.0
+*n:CityName -> ({ peoria })({ ' peoria ' }) weight 0.0
+*n:CityName -> ({ philadelphia })({ ' philadelphia ' }) weight 0.0
+*n:CityName -> ({ phoenix })({ ' phoenix ' }) weight 0.0
+*n:CityName -> ({ pittsburgh })({ ' pittsburgh ' }) weight 0.0
+*n:CityName -> ({ plano })({ ' plano ' }) weight 0.0
+*n:CityName -> ({ pomona })({ ' pomona ' }) weight 0.0
+*n:CityName -> ({ pontiac })({ ' pontiac ' }) weight 0.0
+*n:CityName -> ({ port arthur })({ ' port arthur ' }) weight 0.0
+*n:CityName -> ({ portland })({ ' portland ' }) weight 0.0
+*n:CityName -> ({ portsmouth })({ ' portsmouth ' }) weight 0.0
+*n:CityName -> ({ providence })({ ' providence ' }) weight 0.0
+*n:CityName -> ({ provo })({ ' provo ' }) weight 0.0
+*n:CityName -> ({ pueblo })({ ' pueblo ' }) weight 0.0
+*n:CityName -> ({ quincy })({ ' quincy ' }) weight 0.0
+*n:CityName -> ({ racine })({ ' racine ' }) weight 0.0
+*n:CityName -> ({ raleigh })({ ' raleigh ' }) weight 0.0
+*n:CityName -> ({ reading })({ ' reading ' }) weight 0.0
+*n:CityName -> ({ redford })({ ' redford ' }) weight 0.0
+*n:CityName -> ({ redondo beach })({ ' redondo beach ' }) weight 0.0
+*n:CityName -> ({ reno })({ ' reno ' }) weight 0.0
+*n:CityName -> ({ richardson })({ ' richardson ' }) weight 0.0
+*n:CityName -> ({ richmond })({ ' richmond ' }) weight 0.0
+*n:CityName -> ({ riverside })({ ' riverside ' }) weight 0.0
+*n:CityName -> ({ roanoke })({ ' roanoke ' }) weight 0.0
+*n:CityName -> ({ rochester })({ ' rochester ' }) weight 0.0
+*n:CityName -> ({ rockford })({ ' rockford ' }) weight 0.0
+*n:CityName -> ({ royal oak })({ ' royal oak ' }) weight 0.0
+*n:CityName -> ({ sacramento })({ ' sacramento ' }) weight 0.0
+*n:CityName -> ({ saginaw })({ ' saginaw ' }) weight 0.0
+*n:CityName -> ({ salem })({ ' salem ' }) weight 0.0
+*n:CityName -> ({ salinas })({ ' salinas ' }) weight 0.0
+*n:CityName -> ({ salt lake city })({ ' salt lake city ' }) weight 0.0
+*n:CityName -> ({ san angelo })({ ' san angelo ' }) weight 0.0
+*n:CityName -> ({ san antonio })({ ' san antonio ' }) weight 0.0
+*n:CityName -> ({ san bernardino })({ ' san bernardino ' }) weight 0.0
+*n:CityName -> ({ san diego })({ ' san diego ' }) weight 0.0
+*n:CityName -> ({ san francisco })({ ' san francisco ' }) weight 0.0
+*n:CityName -> ({ san jose })({ ' san jose ' }) weight 0.0
+*n:CityName -> ({ san leandro })({ ' san leandro ' }) weight 0.0
+*n:CityName -> ({ san mateo })({ ' san mateo ' }) weight 0.0
+*n:CityName -> ({ santa ana })({ ' santa ana ' }) weight 0.0
+*n:CityName -> ({ santa barbara })({ ' santa barbara ' }) weight 0.0
+*n:CityName -> ({ santa clara })({ ' santa clara ' }) weight 0.0
+*n:CityName -> ({ santa monica })({ ' santa monica ' }) weight 0.0
+*n:CityName -> ({ santa rosa })({ ' santa rosa ' }) weight 0.0
+*n:CityName -> ({ savannah })({ ' savannah ' }) weight 0.0
+*n:CityName -> ({ schenectady })({ ' schenectady ' }) weight 0.0
+*n:CityName -> ({ scotts valley })({ ' scotts valley ' }) weight 0.0
+*n:CityName -> ({ scottsdale })({ ' scottsdale ' }) weight 0.0
+*n:CityName -> ({ scranton })({ ' scranton ' }) weight 0.0
+*n:CityName -> ({ seattle })({ ' seattle ' }) weight 0.0
+*n:CityName -> ({ shreveport })({ ' shreveport ' }) weight 0.0
+*n:CityName -> ({ silver spring })({ ' silver spring ' }) weight 0.0
+*n:CityName -> ({ simi valley })({ ' simi valley ' }) weight 0.0
+*n:CityName -> ({ sioux city })({ ' sioux city ' }) weight 0.0
+*n:CityName -> ({ sioux falls })({ ' sioux falls ' }) weight 0.0
+*n:CityName -> ({ skokie })({ ' skokie ' }) weight 0.0
+*n:CityName -> ({ somerville })({ ' somerville ' }) weight 0.0
+*n:CityName -> ({ south bend })({ ' south bend ' }) weight 0.0
+*n:CityName -> ({ south gate })({ ' south gate ' }) weight 0.0
+*n:CityName -> ({ southfield })({ ' southfield ' }) weight 0.0
+*n:CityName -> ({ spokane })({ ' spokane ' }) weight 0.0
+*n:CityName -> ({ springfield })({ ' springfield ' }) weight 0.0
+*n:CityName -> ({ st. clair shores })({ ' st. clair shores ' }) weight 0.0
+*n:CityName -> ({ st. joseph })({ ' st. joseph ' }) weight 0.0
+*n:CityName -> ({ st. louis })({ ' st. louis ' }) weight 0.0
+*n:CityName -> ({ st. paul })({ ' st. paul ' }) weight 0.0
+*n:CityName -> ({ st. petersburg })({ ' st. petersburg ' }) weight 0.0
+*n:CityName -> ({ stamford })({ ' stamford ' }) weight 0.0
+*n:CityName -> ({ sterling heights })({ ' sterling heights ' }) weight 0.0
+*n:CityName -> ({ stockton })({ ' stockton ' }) weight 0.0
+*n:CityName -> ({ sunnyvale })({ ' sunnyvale ' }) weight 0.0
+*n:CityName -> ({ syracuse })({ ' syracuse ' }) weight 0.0
+*n:CityName -> ({ tacoma })({ ' tacoma ' }) weight 0.0
+*n:CityName -> ({ tallahassee })({ ' tallahassee ' }) weight 0.0
+*n:CityName -> ({ tampa })({ ' tampa ' }) weight 0.0
+*n:CityName -> ({ taylor })({ ' taylor ' }) weight 0.0
+*n:CityName -> ({ tempe })({ ' tempe ' }) weight 0.0
+*n:CityName -> ({ terre haute })({ ' terre haute ' }) weight 0.0
+*n:CityName -> ({ thousand oaks })({ ' thousand oaks ' }) weight 0.0
+*n:CityName -> ({ toledo })({ ' toledo ' }) weight 0.0
+*n:CityName -> ({ topeka })({ ' topeka ' }) weight 0.0
+*n:CityName -> ({ torrance })({ ' torrance ' }) weight 0.0
+*n:CityName -> ({ trenton })({ ' trenton ' }) weight 0.0
+*n:CityName -> ({ troy })({ ' troy ' }) weight 0.0
+*n:CityName -> ({ tucson })({ ' tucson ' }) weight 0.0
+*n:CityName -> ({ tulsa })({ ' tulsa ' }) weight 0.0
+*n:CityName -> ({ tuscaloosa })({ ' tuscaloosa ' }) weight 0.0
+*n:CityName -> ({ tyler })({ ' tyler ' }) weight 0.0
+*n:CityName -> ({ upper darby })({ ' upper darby ' }) weight 0.0
+*n:CityName -> ({ utica })({ ' utica ' }) weight 0.0
+*n:CityName -> ({ vallejo })({ ' vallejo ' }) weight 0.0
+*n:CityName -> ({ ventura })({ ' ventura ' }) weight 0.0
+*n:CityName -> ({ virginia beach })({ ' virginia beach ' }) weight 0.0
+*n:CityName -> ({ waco })({ ' waco ' }) weight 0.0
+*n:CityName -> ({ waltham })({ ' waltham ' }) weight 0.0
+*n:CityName -> ({ warren })({ ' warren ' }) weight 0.0
+*n:CityName -> ({ warwick })({ ' warwick ' }) weight 0.0
+*n:CityName -> ({ washington })({ ' washington ' }) weight 0.0
+*n:CityName -> ({ waterbury })({ ' waterbury ' }) weight 0.0
+*n:CityName -> ({ waterford })({ ' waterford ' }) weight 0.0
+*n:CityName -> ({ waterloo })({ ' waterloo ' }) weight 0.0
+*n:CityName -> ({ waukegan })({ ' waukegan ' }) weight 0.0
+*n:CityName -> ({ west allis })({ ' west allis ' }) weight 0.0
+*n:CityName -> ({ west covina })({ ' west covina ' }) weight 0.0
+*n:CityName -> ({ west hartford })({ ' west hartford ' }) weight 0.0
+*n:CityName -> ({ west palm beach })({ ' west palm beach ' }) weight 0.0
+*n:CityName -> ({ west valley })({ ' west valley ' }) weight 0.0
+*n:CityName -> ({ westland })({ ' westland ' }) weight 0.0
+*n:CityName -> ({ westminster })({ ' westminster ' }) weight 0.0
+*n:CityName -> ({ whittier })({ ' whittier ' }) weight 0.0
+*n:CityName -> ({ wichita })({ ' wichita ' }) weight 0.0
+*n:CityName -> ({ wichita falls })({ ' wichita falls ' }) weight 0.0
+*n:CityName -> ({ wilmington })({ ' wilmington ' }) weight 0.0
+*n:CityName -> ({ winston-salem })({ ' winston-salem ' }) weight 0.0
+*n:CityName -> ({ woodbridge })({ ' woodbridge ' }) weight 0.0
+*n:CityName -> ({ worcester })({ ' worcester ' }) weight 0.0
+*n:CityName -> ({ wyoming })({ ' wyoming ' }) weight 0.0
+*n:CityName -> ({ yonkers })({ ' yonkers ' }) weight 0.0
+*n:CityName -> ({ youngstown })({ ' youngstown ' }) weight 0.0
+*n:CountryName -> ({ usa })({ ' usa ' }) weight 0.0
+*n:PlaceName -> ({ alverstone })({ ' alverstone ' }) weight 0.0
+*n:PlaceName -> ({ antero })({ ' antero ' }) weight 0.0
+*n:PlaceName -> ({ arkansas river })({ ' arkansas river ' }) weight 0.0
+*n:PlaceName -> ({ atlantic ocean })({ ' atlantic ocean ' }) weight 0.0
+*n:PlaceName -> ({ backbone mountain })({ ' backbone mountain ' }) weight 0.0
+*n:PlaceName -> ({ bear })({ ' bear ' }) weight 0.0
+*n:PlaceName -> ({ beaver dam creek })({ ' beaver dam creek ' }) weight 0.0
+*n:PlaceName -> ({ becharof })({ ' becharof ' }) weight 0.0
+*n:PlaceName -> ({ belford })({ ' belford ' }) weight 0.0
+*n:PlaceName -> ({ belle fourche river })({ ' belle fourche river ' }) weight 0.0
+*n:PlaceName -> ({ bianca })({ ' bianca ' }) weight 0.0
+*n:PlaceName -> ({ big stone lake })({ ' big stone lake ' }) weight 0.0
+*n:PlaceName -> ({ black mesa })({ ' black mesa ' }) weight 0.0
+*n:PlaceName -> ({ black mountain })({ ' black mountain ' }) weight 0.0
+*n:PlaceName -> ({ blackburn })({ ' blackburn ' }) weight 0.0
+*n:PlaceName -> ({ bona })({ ' bona ' }) weight 0.0
+*n:PlaceName -> ({ borah peak })({ ' borah peak ' }) weight 0.0
+*n:PlaceName -> ({ boundary peak })({ ' boundary peak ' }) weight 0.0
+*n:PlaceName -> ({ brasstown bald })({ ' brasstown bald ' }) weight 0.0
+*n:PlaceName -> ({ bross })({ ' bross ' }) weight 0.0
+*n:PlaceName -> ({ browne tower })({ ' browne tower ' }) weight 0.0
+*n:PlaceName -> ({ campbell hill })({ ' campbell hill ' }) weight 0.0
+*n:PlaceName -> ({ castle })({ ' castle ' }) weight 0.0
+*n:PlaceName -> ({ centerville })({ ' centerville ' }) weight 0.0
+*n:PlaceName -> ({ champlain })({ ' champlain ' }) weight 0.0
+*n:PlaceName -> ({ charles mound })({ ' charles mound ' }) weight 0.0
+*n:PlaceName -> ({ cheaha mountain })({ ' cheaha mountain ' }) weight 0.0
+*n:PlaceName -> ({ churchill })({ ' churchill ' }) weight 0.0
+*n:PlaceName -> ({ clingmans dome })({ ' clingmans dome ' }) weight 0.0
+*n:PlaceName -> ({ colorado river })({ ' colorado river ' }) weight 0.0
+*n:PlaceName -> ({ crestone })({ ' crestone ' }) weight 0.0
+*n:PlaceName -> ({ crestone needle })({ ' crestone needle ' }) weight 0.0
+*n:PlaceName -> ({ death valley })({ ' death valley ' }) weight 0.0
+*n:PlaceName -> ({ delaware river })({ ' delaware river ' }) weight 0.0
+*n:PlaceName -> ({ driskill mountain })({ ' driskill mountain ' }) weight 0.0
+*n:PlaceName -> ({ eagle mountain })({ ' eagle mountain ' }) weight 0.0
+*n:PlaceName -> ({ east buttress })({ ' east buttress ' }) weight 0.0
+*n:PlaceName -> ({ el diente })({ ' el diente ' }) weight 0.0
+*n:PlaceName -> ({ elbert })({ ' elbert ' }) weight 0.0
+*n:PlaceName -> ({ erie })({ ' erie ' }) weight 0.0
+*n:PlaceName -> ({ evans })({ ' evans ' }) weight 0.0
+*n:PlaceName -> ({ fairweather })({ ' fairweather ' }) weight 0.0
+*n:PlaceName -> ({ flathead })({ ' flathead ' }) weight 0.0
+*n:PlaceName -> ({ foraker })({ ' foraker ' }) weight 0.0
+*n:PlaceName -> ({ franklin township })({ ' franklin township ' }) weight 0.0
+*n:PlaceName -> ({ gannett peak })({ ' gannett peak ' }) weight 0.0
+*n:PlaceName -> ({ granite peak })({ ' granite peak ' }) weight 0.0
+*n:PlaceName -> ({ grays })({ ' grays ' }) weight 0.0
+*n:PlaceName -> ({ great salt lake })({ ' great salt lake ' }) weight 0.0
+*n:PlaceName -> ({ guadalupe peak })({ ' guadalupe peak ' }) weight 0.0
+*n:PlaceName -> ({ gulf of mexico })({ ' gulf of mexico ' }) weight 0.0
+*n:PlaceName -> ({ harney peak })({ ' harney peak ' }) weight 0.0
+*n:PlaceName -> ({ harvard })({ ' harvard ' }) weight 0.0
+*n:PlaceName -> ({ high point })({ ' high point ' }) weight 0.0
+*n:PlaceName -> ({ hubbard })({ ' hubbard ' }) weight 0.0
+*n:PlaceName -> ({ humphreys peak })({ ' humphreys peak ' }) weight 0.0
+*n:PlaceName -> ({ hunter })({ ' hunter ' }) weight 0.0
+*n:PlaceName -> ({ huron })({ ' huron ' }) weight 0.0
+*n:PlaceName -> ({ iliamna })({ ' iliamna ' }) weight 0.0
+*n:PlaceName -> ({ jerimoth hill })({ ' jerimoth hill ' }) weight 0.0
+*n:PlaceName -> ({ johnson township })({ ' johnson township ' }) weight 0.0
+*n:PlaceName -> ({ kennedy })({ ' kennedy ' }) weight 0.0
+*n:PlaceName -> ({ kings peak })({ ' kings peak ' }) weight 0.0
+*n:PlaceName -> ({ kit carson })({ ' kit carson ' }) weight 0.0
+*n:PlaceName -> ({ kootenai river })({ ' kootenai river ' }) weight 0.0
+*n:PlaceName -> ({ la plata })({ ' la plata ' }) weight 0.0
+*n:PlaceName -> ({ lake champlain })({ ' lake champlain ' }) weight 0.0
+*n:PlaceName -> ({ lake erie })({ ' lake erie ' }) weight 0.0
+*n:PlaceName -> ({ lake michigan })({ ' lake michigan ' }) weight 0.0
+*n:PlaceName -> ({ lake of the woods })({ ' lake of the woods ' }) weight 0.0
+*n:PlaceName -> ({ lake superior })({ ' lake superior ' }) weight 0.0
+*n:PlaceName -> ({ lincoln })({ ' lincoln ' }) weight 0.0
+*n:PlaceName -> ({ little river })({ ' little river ' }) weight 0.0
+*n:PlaceName -> ({ long island sound })({ ' long island sound ' }) weight 0.0
+*n:PlaceName -> ({ longs })({ ' longs ' }) weight 0.0
+*n:PlaceName -> ({ magazine mountain })({ ' magazine mountain ' }) weight 0.0
+*n:PlaceName -> ({ maroon })({ ' maroon ' }) weight 0.0
+*n:PlaceName -> ({ massive })({ ' massive ' }) weight 0.0
+*n:PlaceName -> ({ mauna kea })({ ' mauna kea ' }) weight 0.0
+*n:PlaceName -> ({ mckinley })({ ' mckinley ' }) weight 0.0
+*n:PlaceName -> ({ michigan })({ ' michigan ' }) weight 0.0
+*n:PlaceName -> ({ mille lacs })({ ' mille lacs ' }) weight 0.0
+*n:PlaceName -> ({ mississippi river })({ ' mississippi river ' }) weight 0.0
+*n:PlaceName -> ({ mount curwood })({ ' mount curwood ' }) weight 0.0
+*n:PlaceName -> ({ mount davis })({ ' mount davis ' }) weight 0.0
+*n:PlaceName -> ({ mount elbert })({ ' mount elbert ' }) weight 0.0
+*n:PlaceName -> ({ mount frissell })({ ' mount frissell ' }) weight 0.0
+*n:PlaceName -> ({ mount greylock })({ ' mount greylock ' }) weight 0.0
+*n:PlaceName -> ({ mount hood })({ ' mount hood ' }) weight 0.0
+*n:PlaceName -> ({ mount katahdin })({ ' mount katahdin ' }) weight 0.0
+*n:PlaceName -> ({ mount mansfield })({ ' mount mansfield ' }) weight 0.0
+*n:PlaceName -> ({ mount marcy })({ ' mount marcy ' }) weight 0.0
+*n:PlaceName -> ({ mount mckinley })({ ' mount mckinley ' }) weight 0.0
+*n:PlaceName -> ({ mount mitchell })({ ' mount mitchell ' }) weight 0.0
+*n:PlaceName -> ({ mount rainier })({ ' mount rainier ' }) weight 0.0
+*n:PlaceName -> ({ mount rogers })({ ' mount rogers ' }) weight 0.0
+*n:PlaceName -> ({ mount sunflower })({ ' mount sunflower ' }) weight 0.0
+*n:PlaceName -> ({ mount washington })({ ' mount washington ' }) weight 0.0
+*n:PlaceName -> ({ mount whitney })({ ' mount whitney ' }) weight 0.0
+*n:PlaceName -> ({ naknek })({ ' naknek ' }) weight 0.0
+*n:PlaceName -> ({ new orleans })({ ' new orleans ' }) weight 0.0
+*n:PlaceName -> ({ north palisade })({ ' north palisade ' }) weight 0.0
+*n:PlaceName -> ({ ocheyedan mound })({ ' ocheyedan mound ' }) weight 0.0
+*n:PlaceName -> ({ ohio river })({ ' ohio river ' }) weight 0.0
+*n:PlaceName -> ({ okeechobee })({ ' okeechobee ' }) weight 0.0
+*n:PlaceName -> ({ ontario })({ ' ontario ' }) weight 0.0
+*n:PlaceName -> ({ ouachita river })({ ' ouachita river ' }) weight 0.0
+*n:PlaceName -> ({ pacific ocean })({ ' pacific ocean ' }) weight 0.0
+*n:PlaceName -> ({ pontchartrain })({ ' pontchartrain ' }) weight 0.0
+*n:PlaceName -> ({ potomac river })({ ' potomac river ' }) weight 0.0
+*n:PlaceName -> ({ princeton })({ ' princeton ' }) weight 0.0
+*n:PlaceName -> ({ quandary })({ ' quandary ' }) weight 0.0
+*n:PlaceName -> ({ rainier })({ ' rainier ' }) weight 0.0
+*n:PlaceName -> ({ rainy })({ ' rainy ' }) weight 0.0
+*n:PlaceName -> ({ red })({ ' red ' }) weight 0.0
+*n:PlaceName -> ({ red bluff reservoir })({ ' red bluff reservoir ' }) weight 0.0
+*n:PlaceName -> ({ red river })({ ' red river ' }) weight 0.0
+*n:PlaceName -> ({ salton sea })({ ' salton sea ' }) weight 0.0
+*n:PlaceName -> ({ sanford })({ ' sanford ' }) weight 0.0
+*n:PlaceName -> ({ sassafras mountain })({ ' sassafras mountain ' }) weight 0.0
+*n:PlaceName -> ({ shasta })({ ' shasta ' }) weight 0.0
+*n:PlaceName -> ({ shavano })({ ' shavano ' }) weight 0.0
+*n:PlaceName -> ({ sill })({ ' sill ' }) weight 0.0
+*n:PlaceName -> ({ snake river })({ ' snake river ' }) weight 0.0
+*n:PlaceName -> ({ south buttress })({ ' south buttress ' }) weight 0.0
+*n:PlaceName -> ({ southeast corner })({ ' southeast corner ' }) weight 0.0
+*n:PlaceName -> ({ spruce knob })({ ' spruce knob ' }) weight 0.0
+*n:PlaceName -> ({ st. clair })({ ' st. clair ' }) weight 0.0
+*n:PlaceName -> ({ st. elias })({ ' st. elias ' }) weight 0.0
+*n:PlaceName -> ({ st. francis river })({ ' st. francis river ' }) weight 0.0
+*n:PlaceName -> ({ superior })({ ' superior ' }) weight 0.0
+*n:PlaceName -> ({ tahoe })({ ' tahoe ' }) weight 0.0
+*n:PlaceName -> ({ taum sauk mountain })({ ' taum sauk mountain ' }) weight 0.0
+*n:PlaceName -> ({ tenleytown })({ ' tenleytown ' }) weight 0.0
+*n:PlaceName -> ({ teshekpuk })({ ' teshekpuk ' }) weight 0.0
+*n:PlaceName -> ({ timms hill })({ ' timms hill ' }) weight 0.0
+*n:PlaceName -> ({ torreys })({ ' torreys ' }) weight 0.0
+*n:PlaceName -> ({ uncompahgre })({ ' uncompahgre ' }) weight 0.0
+*n:PlaceName -> ({ vancouver })({ ' vancouver ' }) weight 0.0
+*n:PlaceName -> ({ verdigris river })({ ' verdigris river ' }) weight 0.0
+*n:PlaceName -> ({ walton county })({ ' walton county ' }) weight 0.0
+*n:PlaceName -> ({ wheeler peak })({ ' wheeler peak ' }) weight 0.0
+*n:PlaceName -> ({ white })({ ' white ' }) weight 0.0
+*n:PlaceName -> ({ white butte })({ ' white butte ' }) weight 0.0
+*n:PlaceName -> ({ whitney })({ ' whitney ' }) weight 0.0
+*n:PlaceName -> ({ williamson })({ ' williamson ' }) weight 0.0
+*n:PlaceName -> ({ wilson })({ ' wilson ' }) weight 0.0
+*n:PlaceName -> ({ winnebago })({ ' winnebago ' }) weight 0.0
+*n:PlaceName -> ({ woodall mountain })({ ' woodall mountain ' }) weight 0.0
+*n:PlaceName -> ({ wrangell })({ ' wrangell ' }) weight 0.0
+*n:PlaceName -> ({ yale })({ ' yale ' }) weight 0.0
+*n:RiverName -> ({ allegheny })({ ' allegheny ' }) weight 0.0
+*n:RiverName -> ({ arkansas })({ ' arkansas ' }) weight 0.0
+*n:RiverName -> ({ bighorn })({ ' bighorn ' }) weight 0.0
+*n:RiverName -> ({ canadian })({ ' canadian ' }) weight 0.0
+*n:RiverName -> ({ chattahoochee })({ ' chattahoochee ' }) weight 0.0
+*n:RiverName -> ({ cheyenne })({ ' cheyenne ' }) weight 0.0
+*n:RiverName -> ({ cimarron })({ ' cimarron ' }) weight 0.0
+*n:RiverName -> ({ clark fork })({ ' clark fork ' }) weight 0.0
+*n:RiverName -> ({ colorado })({ ' colorado ' }) weight 0.0
+*n:RiverName -> ({ columbia })({ ' columbia ' }) weight 0.0
+*n:RiverName -> ({ connecticut })({ ' connecticut ' }) weight 0.0
+*n:RiverName -> ({ cumberland })({ ' cumberland ' }) weight 0.0
+*n:RiverName -> ({ dakota })({ ' dakota ' }) weight 0.0
+*n:RiverName -> ({ delaware })({ ' delaware ' }) weight 0.0
+*n:RiverName -> ({ gila })({ ' gila ' }) weight 0.0
+*n:RiverName -> ({ green })({ ' green ' }) weight 0.0
+*n:RiverName -> ({ hudson })({ ' hudson ' }) weight 0.0
+*n:RiverName -> ({ little missouri })({ ' little missouri ' }) weight 0.0
+*n:RiverName -> ({ mississippi })({ ' mississippi ' }) weight 0.0
+*n:RiverName -> ({ missouri })({ ' missouri ' }) weight 0.0
+*n:RiverName -> ({ neosho })({ ' neosho ' }) weight 0.0
+*n:RiverName -> ({ niobrara })({ ' niobrara ' }) weight 0.0
+*n:RiverName -> ({ north platte })({ ' north platte ' }) weight 0.0
+*n:RiverName -> ({ ohio })({ ' ohio ' }) weight 0.0
+*n:RiverName -> ({ ouachita })({ ' ouachita ' }) weight 0.0
+*n:RiverName -> ({ pearl })({ ' pearl ' }) weight 0.0
+*n:RiverName -> ({ pecos })({ ' pecos ' }) weight 0.0
+*n:RiverName -> ({ potomac })({ ' potomac ' }) weight 0.0
+*n:RiverName -> ({ powder })({ ' powder ' }) weight 0.0
+*n:RiverName -> ({ red })({ ' red ' }) weight 0.0
+*n:RiverName -> ({ republican })({ ' republican ' }) weight 0.0
+*n:RiverName -> ({ rio grande })({ ' rio grande ' }) weight 0.0
+*n:RiverName -> ({ roanoke })({ ' roanoke ' }) weight 0.0
+*n:RiverName -> ({ rock })({ ' rock ' }) weight 0.0
+*n:RiverName -> ({ san juan })({ ' san juan ' }) weight 0.0
+*n:RiverName -> ({ smoky hill })({ ' smoky hill ' }) weight 0.0
+*n:RiverName -> ({ snake })({ ' snake ' }) weight 0.0
+*n:RiverName -> ({ south platte })({ ' south platte ' }) weight 0.0
+*n:RiverName -> ({ st. francis })({ ' st. francis ' }) weight 0.0
+*n:RiverName -> ({ tennessee })({ ' tennessee ' }) weight 0.0
+*n:RiverName -> ({ tombigbee })({ ' tombigbee ' }) weight 0.0
+*n:RiverName -> ({ wabash })({ ' wabash ' }) weight 0.0
+*n:RiverName -> ({ washita })({ ' washita ' }) weight 0.0
+*n:RiverName -> ({ wateree catawba })({ ' wateree catawba ' }) weight 0.0
+*n:RiverName -> ({ white })({ ' white ' }) weight 0.0
+*n:RiverName -> ({ yellowstone })({ ' yellowstone ' }) weight 0.0
+*n:StateAbbrev -> ({ ak })({ ' ak ' }) weight 0.0
+*n:StateAbbrev -> ({ al })({ ' al ' }) weight 0.0
+*n:StateAbbrev -> ({ ar })({ ' ar ' }) weight 0.0
+*n:StateAbbrev -> ({ az })({ ' az ' }) weight 0.0
+*n:StateAbbrev -> ({ ca })({ ' ca ' }) weight 0.0
+*n:StateAbbrev -> ({ co })({ ' co ' }) weight 0.0
+*n:StateAbbrev -> ({ ct })({ ' ct ' }) weight 0.0
+*n:StateAbbrev -> ({ dc })({ ' dc ' }) weight 0.0
+*n:StateAbbrev -> ({ de })({ ' de ' }) weight 0.0
+*n:StateAbbrev -> ({ fl })({ ' fl ' }) weight 0.0
+*n:StateAbbrev -> ({ ga })({ ' ga ' }) weight 0.0
+*n:StateAbbrev -> ({ hi })({ ' hi ' }) weight 0.0
+*n:StateAbbrev -> ({ ia })({ ' ia ' }) weight 0.0
+*n:StateAbbrev -> ({ id })({ ' id ' }) weight 0.0
+*n:StateAbbrev -> ({ il })({ ' il ' }) weight 0.0
+*n:StateAbbrev -> ({ in })({ ' in ' }) weight 0.0
+*n:StateAbbrev -> ({ ks })({ ' ks ' }) weight 0.0
+*n:StateAbbrev -> ({ ky })({ ' ky ' }) weight 0.0
+*n:StateAbbrev -> ({ la })({ ' la ' }) weight 0.0
+*n:StateAbbrev -> ({ ma })({ ' ma ' }) weight 0.0
+*n:StateAbbrev -> ({ md })({ ' md ' }) weight 0.0
+*n:StateAbbrev -> ({ me })({ ' me ' }) weight 0.0
+*n:StateAbbrev -> ({ mi })({ ' mi ' }) weight 0.0
+*n:StateAbbrev -> ({ mn })({ ' mn ' }) weight 0.0
+*n:StateAbbrev -> ({ mo })({ ' mo ' }) weight 0.0
+*n:StateAbbrev -> ({ ms })({ ' ms ' }) weight 0.0
+*n:StateAbbrev -> ({ mt })({ ' mt ' }) weight 0.0
+*n:StateAbbrev -> ({ nc })({ ' nc ' }) weight 0.0
+*n:StateAbbrev -> ({ nd })({ ' nd ' }) weight 0.0
+*n:StateAbbrev -> ({ ne })({ ' ne ' }) weight 0.0
+*n:StateAbbrev -> ({ nh })({ ' nh ' }) weight 0.0
+*n:StateAbbrev -> ({ nj })({ ' nj ' }) weight 0.0
+*n:StateAbbrev -> ({ nm })({ ' nm ' }) weight 0.0
+*n:StateAbbrev -> ({ nv })({ ' nv ' }) weight 0.0
+*n:StateAbbrev -> ({ ny })({ ' ny ' }) weight 0.0
+*n:StateAbbrev -> ({ oh })({ ' oh ' }) weight 0.0
+*n:StateAbbrev -> ({ ok })({ ' ok ' }) weight 0.0
+*n:StateAbbrev -> ({ or })({ ' or ' }) weight 0.0
+*n:StateAbbrev -> ({ pa })({ ' pa ' }) weight 0.0
+*n:StateAbbrev -> ({ ri })({ ' ri ' }) weight 0.0
+*n:StateAbbrev -> ({ sc })({ ' sc ' }) weight 0.0
+*n:StateAbbrev -> ({ sd })({ ' sd ' }) weight 0.0
+*n:StateAbbrev -> ({ tn })({ ' tn ' }) weight 0.0
+*n:StateAbbrev -> ({ tx })({ ' tx ' }) weight 0.0
+*n:StateAbbrev -> ({ ut })({ ' ut ' }) weight 0.0
+*n:StateAbbrev -> ({ va })({ ' va ' }) weight 0.0
+*n:StateAbbrev -> ({ vt })({ ' vt ' }) weight 0.0
+*n:StateAbbrev -> ({ wa })({ ' wa ' }) weight 0.0
+*n:StateAbbrev -> ({ wi })({ ' wi ' }) weight 0.0
+*n:StateAbbrev -> ({ wv })({ ' wv ' }) weight 0.0
+*n:StateAbbrev -> ({ wy })({ ' wy ' }) weight 0.0
+*n:StateAbbrev -> ({ alabama })({ ' al ' }) weight 0.0
+*n:StateAbbrev -> ({ alaska })({ ' ak ' }) weight 0.0
+*n:StateAbbrev -> ({ arizona })({ ' az ' }) weight 0.0
+*n:StateAbbrev -> ({ arkansas })({ ' ar ' }) weight 0.0
+*n:StateAbbrev -> ({ california })({ ' ca ' }) weight 0.0
+*n:StateAbbrev -> ({ colorado })({ ' co ' }) weight 0.0
+*n:StateAbbrev -> ({ connecticut })({ ' ct ' }) weight 0.0
+*n:StateAbbrev -> ({ delaware })({ ' de ' }) weight 0.0
+*n:StateAbbrev -> ({ district of columbia })({ ' dc ' }) weight 0.0
+*n:StateAbbrev -> ({ florida })({ ' fl ' }) weight 0.0
+*n:StateAbbrev -> ({ georgia })({ ' ga ' }) weight 0.0
+*n:StateAbbrev -> ({ hawaii })({ ' hi ' }) weight 0.0
+*n:StateAbbrev -> ({ idaho })({ ' id ' }) weight 0.0
+*n:StateAbbrev -> ({ illinois })({ ' il ' }) weight 0.0
+*n:StateAbbrev -> ({ indiana })({ ' in ' }) weight 0.0
+*n:StateAbbrev -> ({ iowa })({ ' ia ' }) weight 0.0
+*n:StateAbbrev -> ({ kansas })({ ' ks ' }) weight 0.0
+*n:StateAbbrev -> ({ kentucky })({ ' ky ' }) weight 0.0
+*n:StateAbbrev -> ({ louisiana })({ ' la ' }) weight 0.0
+*n:StateAbbrev -> ({ maine })({ ' me ' }) weight 0.0
+*n:StateAbbrev -> ({ maryland })({ ' md ' }) weight 0.0
+*n:StateAbbrev -> ({ massachusetts })({ ' ma ' }) weight 0.0
+*n:StateAbbrev -> ({ michigan })({ ' mi ' }) weight 0.0
+*n:StateAbbrev -> ({ minnesota })({ ' mn ' }) weight 0.0
+*n:StateAbbrev -> ({ mississippi })({ ' ms ' }) weight 0.0
+*n:StateAbbrev -> ({ missouri })({ ' mo ' }) weight 0.0
+*n:StateAbbrev -> ({ montana })({ ' mt ' }) weight 0.0
+*n:StateAbbrev -> ({ nebraska })({ ' ne ' }) weight 0.0
+*n:StateAbbrev -> ({ nevada })({ ' nv ' }) weight 0.0
+*n:StateAbbrev -> ({ new hampshire })({ ' nh ' }) weight 0.0
+*n:StateAbbrev -> ({ new jersey })({ ' nj ' }) weight 0.0
+*n:StateAbbrev -> ({ new mexico })({ ' nm ' }) weight 0.0
+*n:StateAbbrev -> ({ new york })({ ' ny ' }) weight 0.0
+*n:StateAbbrev -> ({ north carolina })({ ' nc ' }) weight 0.0
+*n:StateAbbrev -> ({ north dakota })({ ' nd ' }) weight 0.0
+*n:StateAbbrev -> ({ ohio })({ ' oh ' }) weight 0.0
+*n:StateAbbrev -> ({ oklahoma })({ ' ok ' }) weight 0.0
+*n:StateAbbrev -> ({ oregon })({ ' or ' }) weight 0.0
+*n:StateAbbrev -> ({ pennsylvania })({ ' pa ' }) weight 0.0
+*n:StateAbbrev -> ({ rhode island })({ ' ri ' }) weight 0.0
+*n:StateAbbrev -> ({ south carolina })({ ' sc ' }) weight 0.0
+*n:StateAbbrev -> ({ south dakota })({ ' sd ' }) weight 0.0
+*n:StateAbbrev -> ({ tennessee })({ ' tn ' }) weight 0.0
+*n:StateAbbrev -> ({ texas })({ ' tx ' }) weight 0.0
+*n:StateAbbrev -> ({ utah })({ ' ut ' }) weight 0.0
+*n:StateAbbrev -> ({ vermont })({ ' vt ' }) weight 0.0
+*n:StateAbbrev -> ({ virginia })({ ' va ' }) weight 0.0
+*n:StateAbbrev -> ({ washington })({ ' wa ' }) weight 0.0
+*n:StateAbbrev -> ({ west virginia })({ ' wv ' }) weight 0.0
+*n:StateAbbrev -> ({ wisconsin })({ ' wi ' }) weight 0.0
+*n:StateAbbrev -> ({ wyoming })({ ' wy ' }) weight 0.0
+*n:StateName -> ({ alabama })({ ' alabama ' }) weight 0.0
+*n:StateName -> ({ alaska })({ ' alaska ' }) weight 0.0
+*n:StateName -> ({ arizona })({ ' arizona ' }) weight 0.0
+*n:StateName -> ({ arkansas })({ ' arkansas ' }) weight 0.0
+*n:StateName -> ({ california })({ ' california ' }) weight 0.0
+*n:StateName -> ({ colorado })({ ' colorado ' }) weight 0.0
+*n:StateName -> ({ connecticut })({ ' connecticut ' }) weight 0.0
+*n:StateName -> ({ delaware })({ ' delaware ' }) weight 0.0
+*n:StateName -> ({ district of columbia })({ ' district of columbia ' }) weight 0.0
+*n:StateName -> ({ florida })({ ' florida ' }) weight 0.0
+*n:StateName -> ({ georgia })({ ' georgia ' }) weight 0.0
+*n:StateName -> ({ hawaii })({ ' hawaii ' }) weight 0.0
+*n:StateName -> ({ idaho })({ ' idaho ' }) weight 0.0
+*n:StateName -> ({ illinois })({ ' illinois ' }) weight 0.0
+*n:StateName -> ({ indiana })({ ' indiana ' }) weight 0.0
+*n:StateName -> ({ iowa })({ ' iowa ' }) weight 0.0
+*n:StateName -> ({ kansas })({ ' kansas ' }) weight 0.0
+*n:StateName -> ({ kentucky })({ ' kentucky ' }) weight 0.0
+*n:StateName -> ({ louisiana })({ ' louisiana ' }) weight 0.0
+*n:StateName -> ({ maine })({ ' maine ' }) weight 0.0
+*n:StateName -> ({ maryland })({ ' maryland ' }) weight 0.0
+*n:StateName -> ({ massachusetts })({ ' massachusetts ' }) weight 0.0
+*n:StateName -> ({ michigan })({ ' michigan ' }) weight 0.0
+*n:StateName -> ({ minnesota })({ ' minnesota ' }) weight 0.0
+*n:StateName -> ({ mississippi })({ ' mississippi ' }) weight 0.0
+*n:StateName -> ({ missouri })({ ' missouri ' }) weight 0.0
+*n:StateName -> ({ montana })({ ' montana ' }) weight 0.0
+*n:StateName -> ({ nebraska })({ ' nebraska ' }) weight 0.0
+*n:StateName -> ({ nevada })({ ' nevada ' }) weight 0.0
+*n:StateName -> ({ new hampshire })({ ' new hampshire ' }) weight 0.0
+*n:StateName -> ({ new jersey })({ ' new jersey ' }) weight 0.0
+*n:StateName -> ({ new mexico })({ ' new mexico ' }) weight 0.0
+*n:StateName -> ({ new york })({ ' new york ' }) weight 0.0
+*n:StateName -> ({ north carolina })({ ' north carolina ' }) weight 0.0
+*n:StateName -> ({ north dakota })({ ' north dakota ' }) weight 0.0
+*n:StateName -> ({ ohio })({ ' ohio ' }) weight 0.0
+*n:StateName -> ({ oklahoma })({ ' oklahoma ' }) weight 0.0
+*n:StateName -> ({ oregon })({ ' oregon ' }) weight 0.0
+*n:StateName -> ({ pennsylvania })({ ' pennsylvania ' }) weight 0.0
+*n:StateName -> ({ rhode island })({ ' rhode island ' }) weight 0.0
+*n:StateName -> ({ south carolina })({ ' south carolina ' }) weight 0.0
+*n:StateName -> ({ south dakota })({ ' south dakota ' }) weight 0.0
+*n:StateName -> ({ tennessee })({ ' tennessee ' }) weight 0.0
+*n:StateName -> ({ texas })({ ' texas ' }) weight 0.0
+*n:StateName -> ({ utah })({ ' utah ' }) weight 0.0
+*n:StateName -> ({ vermont })({ ' vermont ' }) weight 0.0
+*n:StateName -> ({ virginia })({ ' virginia ' }) weight 0.0
+*n:StateName -> ({ washington })({ ' washington ' }) weight 0.0
+*n:StateName -> ({ west virginia })({ ' west virginia ' }) weight 0.0
+*n:StateName -> ({ wisconsin })({ ' wisconsin ' }) weight 0.0
+*n:StateName -> ({ wyoming })({ ' wyoming ' }) weight 0.0
+*n:Num -> ({ *t:Num#1 })({ *t:Num#1 }) weight 0.0
+*n:StateName -> ({ 密西西比 })({ ' mississippi ' }) weight 0.13885188986048777
+*n:State -> ({ *n:StateName#1 })({ stateid ( *n:StateName#1 ) }) weight 0.5865915000476549
+*n:Place -> ({ *n:State#1 *g:1 周边 *g:1 州 *g:1 高点 })({ high_point_1 ( state ( next_to_2 ( *n:State#1 ) ) ) }) weight 0.03241877513191596
+*n:Query -> ({ *t:Bound 什么 是 *g:2 *n:Place#1 *t:Bound })({ answer ( *n:Place#1 ) }) weight 0.04151635793207984
+*n:StateName -> ({ 给 我 在 弗吉尼亚 })({ ' virginia ' }) weight 0.001149336233888455
+*n:City -> ({ *n:City#1 城市 })({ city ( *n:City#1 ) }) weight -0.016863097243518872
+*n:City -> ({ *n:City#1 *g:1 城市 })({ city ( *n:City#1 ) }) weight -0.7456398552470784
+*n:Query -> ({ *t:Bound *n:State#1 州 *g:1 城市 *t:Bound })({ answer ( city ( loc_2 ( *n:State#1 ) ) ) }) weight 0.06179993823395096
+*n:State -> ({ 的 })({ state ( all ) }) weight -0.3048539914130729
+*n:State -> ({ 我 最大 *n:State#1 })({ largest ( *n:State#1 ) }) weight 0.20005971961669097
+*n:Query -> ({ *t:Bound 给 *n:State#1 *g:1 *t:Bound })({ answer ( *n:State#1 ) }) weight 0.19813959478789575
+*n:State -> ({ 最大 *n:State#1 })({ largest ( *n:State#1 ) }) weight -0.10339877103823411
+*n:Num -> ({ *n:State#1 *g:2 多大 })({ size ( *n:State#1 ) }) weight 0.33180004687774184
+*n:Query -> ({ *t:Bound *n:Num#1 *t:Bound })({ answer ( *n:Num#1 ) }) weight -0.468662736268739
+*n:StateName -> ({ 得克萨斯 州 })({ ' texas ' }) weight 0.2936434586935954
+*n:StateName -> ({ 得克萨斯 *g:1 有 })({ ' texas ' }) weight 0.1636594849465891
+*n:StateName -> ({ 蒙大拿 })({ ' montana ' }) weight -0.23339860356265468
+*n:Place -> ({ *n:State#1 *g:2 最高 点 })({ highest ( place ( loc_2 ( *n:State#1 ) ) ) }) weight 0.1423790362771838
+*n:Query -> ({ *t:Bound *n:Place#1 *g:1 有 多高 *t:Bound })({ answer ( elevation_1 ( *n:Place#1 ) ) }) weight 0.013447224647706627
+*n:StateName -> ({ 阿拉斯加 })({ ' alaska ' }) weight -0.03834991761769509
+*n:City -> ({ *n:State#1 *g:1 最大 *g:1 城市 })({ largest ( city ( loc_2 ( *n:State#1 ) ) ) }) weight 2.646926271403236
+*n:Query -> ({ *t:Bound *n:City#1 有 多大 *t:Bound })({ answer ( size ( *n:City#1 ) ) }) weight -0.059313288023403764
+*n:River -> ({ *n:RiverName#1 })({ riverid ( *n:RiverName#1 ) }) weight -0.25777904177567773
+*n:RiverName -> ({ 特拉华 })({ ' delaware ' }) weight 0.12185083481053167
+*n:Query -> ({ *t:Bound *n:River#1 河 是 多长 *t:Bound })({ answer ( len ( river ( *n:River#1 ) ) ) }) weight 0.46940598212031376
+*n:River -> ({ *n:River#1 河 })({ river ( *n:River#1 ) }) weight -1.6618154989834184
+*n:RiverName -> ({ 密西西比 河 })({ ' mississippi ' }) weight 1.285581510589567
+*n:Query -> ({ *t:Bound *g:1 *n:River#1 有 多长 *t:Bound })({ answer ( len ( *n:River#1 ) ) }) weight 1.186267553883761
+*n:Query -> ({ *t:Bound *g:1 *n:River#1 有 多长 *t:Bound })({ answer ( len ( river ( *n:River#1 ) ) ) }) weight -0.6516703098004933
+*n:RiverName -> ({ 密苏里 })({ ' missouri ' }) weight 0.8794593892649833
+*n:RiverName -> ({ 俄亥俄 })({ ' ohio ' }) weight 0.7263798668175458
+*n:RiverName -> ({ 里奥格兰德 })({ ' rio grande ' }) weight 0.8132818005550607
+*n:Country -> ({ *n:CountryName#1 })({ countryid ( *n:CountryName#1 ) }) weight 0.7997142779691216
+*n:CountryName -> ({ 在 美国 })({ ' usa ' }) weight 0.3025196065132803
+*n:River -> ({ *n:Country#1 最短 *g:1 河流 })({ shortest ( river ( loc_2 ( *n:Country#1 ) ) ) }) weight 0.12338468134855725
+*n:Query -> ({ *t:Bound 在 *n:State#1 *g:2 多少 城市 *t:Bound })({ answer ( count ( city ( loc_2 ( *n:State#1 ) ) ) ) }) weight 0.05182989804902425
+*n:StateName -> ({ 蒙大拿 *g:1 有 })({ ' montana ' }) weight 0.022178519912785924
+*n:StateName -> ({ 在 阿拉巴马 })({ ' alabama ' }) weight 0.09968887702547516
+*n:Query -> ({ *t:Bound *n:State#1 *g:2 多少 公民 *t:Bound })({ answer ( population_1 ( *n:State#1 ) ) }) weight 0.07330187100611897
+*n:StateName -> ({ 在 加利福尼亚 *g:2 了 })({ ' california ' }) weight 0.005826677576379339
+*n:StateName -> ({ 加利福尼亚 })({ ' california ' }) weight -0.02322727577906752
+*n:Query -> ({ *t:Bound *n:Num#1 *g:1 多少 *g:1 *t:Bound })({ answer ( *n:Num#1 ) }) weight 1.604869340369038
+*n:StateName -> ({ 佛罗里达 })({ ' florida ' }) weight 0.0041398419101115035
+*n:City -> ({ *n:State#1 *g:2 主要 城市 })({ major ( city ( loc_2 ( *n:State#1 ) ) ) }) weight 0.1479898804489859
+*n:Num -> ({ 在 *n:City#1 有 })({ count ( *n:City#1 ) }) weight 0.26488587661713736
+*n:StateName -> ({ 俄亥俄 })({ ' ohio ' }) weight -0.07369364049811204
+*n:River -> ({ 河流 贯穿 *n:State#1 })({ traverse_2 ( *n:State#1 ) }) weight 0.613393195369433
+*n:River -> ({ 主要 *n:River#1 })({ major ( river ( *n:River#1 ) ) }) weight 0.33029749599094194
+*n:Num -> ({ 多少 *n:River#1 })({ count ( *n:River#1 ) }) weight -0.11734262674154669
+*n:Query -> ({ *t:Bound 有 *n:Num#1 *g:1 *t:Bound })({ answer ( *n:Num#1 ) }) weight 0.16013041449994067
+*n:CityName -> ({ 奥斯汀 })({ ' austin ' }) weight -0.04172264849027886
+*n:City -> ({ *n:CityName#1 })({ cityid ( *n:CityName#1 , _ ) }) weight -0.6416217404221211
+*n:Query -> ({ *t:Bound 有 多少 *g:1 *n:Num#1 *t:Bound })({ answer ( *n:Num#1 ) }) weight 0.02315250851239875
+*n:Num -> ({ 人 居住 在 *n:City#1 })({ population_1 ( *n:City#1 ) }) weight 0.006808559840959482
+*n:CityName -> ({ 卡拉马祖 })({ ' kalamazoo ' }) weight 0.001698033911618876
+*n:City -> ({ *n:StateAbbrev#2 *g:2 *n:CityName#1 })({ cityid ( *n:CityName#1 , *n:StateAbbrev#2 ) }) weight 0.15640529814137963
+*n:StateAbbrev -> ({ 生活 *g:1 明尼苏达 *g:2 明尼阿波利斯 市 })({ ' mn ' }) weight 0.2489481018184341
+*n:Num -> ({ 人 *n:StateAbbrev#1 })({ population_1 ( cityid ( ' minneapolis ' , *n:StateAbbrev#1 ) ) }) weight 0.2540563418929498
+*n:StateName -> ({ 纽约 })({ ' new york ' }) weight 0.08756460921205746
+*n:Num -> ({ 住 在 *n:State#1 })({ population_1 ( *n:State#1 ) }) weight 0.529448213900163
+*n:Query -> ({ *t:Bound *g:1 多少 人 *n:Num#1 *t:Bound })({ answer ( *n:Num#1 ) }) weight 0.19579331819852705
+*n:StateName -> ({ 住 *g:1 得克萨斯 })({ ' texas ' }) weight 0.6984416042642181
+*n:City -> ({ *n:State#1 *g:2 首府 })({ capital ( loc_2 ( *n:State#1 ) ) }) weight 0.5622151084675607
+*n:City -> ({ *n:City#1 首府 })({ capital ( *n:City#1 ) }) weight 0.4298628054306783
+*n:Query -> ({ *t:Bound 有 多少 人 *n:State#1 *g:2 首府 *t:Bound })({ answer ( population_1 ( capital ( loc_2 ( *n:State#1 ) ) ) ) }) weight 0.1287481697011259
+*n:StateName -> ({ 华盛顿 })({ ' washington ' }) weight 0.12153761724578901
+*n:StateName -> ({ 在 科罗拉多 })({ ' colorado ' }) weight 0.06476291590279343
+*n:Query -> ({ *t:Bound *n:State#1 *g:1 有 多少 河流 *t:Bound })({ answer ( count ( river ( loc_2 ( *n:State#1 ) ) ) ) }) weight 0.1372206771954723
+*n:River -> ({ *n:State#1 *g:1 有 })({ loc_2 ( *n:State#1 ) }) weight -4.35106042772784
+*n:StateName -> ({ 科罗拉多 })({ ' colorado ' }) weight -0.054113233273792354
+*n:Query -> ({ *t:Bound *n:State#1 *g:1 有 多少 条 河流 呢 *t:Bound })({ answer ( count ( river ( loc_2 ( *n:State#1 ) ) ) ) }) weight 0.1357013694560742
+*n:CountryName -> ({ 美国 })({ ' usa ' }) weight 0.1949015087005694
+*n:Query -> ({ *t:Bound *n:Country#1 有 多少 平方公里 呢 *t:Bound })({ answer ( area_1 ( *n:Country#1 ) ) }) weight 0.0
+*n:State -> ({ *n:River#1 河 贯穿 })({ traverse_1 ( river ( *n:River#1 ) ) }) weight 1.073762220670114
+*n:RiverName -> ({ 科罗拉多 河 })({ ' colorado ' }) weight 0.6735153356287858
+*n:Num -> ({ *n:River#1 贯穿 })({ count ( state ( traverse_1 ( river ( *n:River#1 ) ) ) ) }) weight 0.37734927000874946
+*n:State -> ({ *n:River#1 贯穿 })({ traverse_1 ( river ( *n:River#1 ) ) }) weight -1.2871411702933746
+*n:River -> ({ *n:River#1 *g:1 所有 })({ river ( *n:River#1 ) }) weight -0.06922133186254902
+*n:River -> ({ 列出 *g:1 *n:State#1 })({ loc_2 ( *n:State#1 ) }) weight -0.1969743791154327
+*n:Query -> ({ *t:Bound *g:1 *n:River#1 *g:2 河流 *t:Bound })({ answer ( *n:River#1 ) }) weight 1.4147620726918297
+*n:River -> ({ 列出 所有 *n:State#1 })({ river ( loc_2 ( *n:State#1 ) ) }) weight 0.6655226818111563
+*n:State -> ({ *n:River#1 河 贯穿 })({ traverse_1 ( *n:River#1 ) }) weight 1.0861418620105678
+*n:State -> ({ *n:River#1 贯穿 })({ traverse_1 ( *n:River#1 ) }) weight -1.266862173286639
+*n:Query -> ({ *t:Bound *n:State#1 哪些 *g:1 *t:Bound })({ answer ( state ( *n:State#1 ) ) }) weight 1.067319745146266
+*n:StateName -> ({ 俄克拉荷马 })({ ' oklahoma ' }) weight 0.02257485348362871
+*n:StateName -> ({ 罗德岛 })({ ' rhode island ' }) weight 0.02257485348362871
+*n:StateName -> ({ 怀俄明 })({ ' wyoming ' }) weight -0.16403024554343446
+*n:StateName -> ({ 在 俄亥俄 })({ ' ohio ' }) weight 0.0919264909319922
+*n:River -> ({ *n:River#1 哪些 主要 })({ major ( river ( *n:River#1 ) ) }) weight 0.2999881086658695
+*n:State -> ({ *n:River#1 所 贯穿 })({ traverse_1 ( river ( *n:River#1 ) ) }) weight -0.05885936063935448
+*n:Num -> ({ *n:State#1 *g:2 人口 是 })({ population_1 ( *n:State#1 ) }) weight 1.86096281231744
+*n:Query -> ({ *t:Bound *n:State#1 *g:1 有 什么 河流 *t:Bound })({ answer ( river ( loc_2 ( *n:State#1 ) ) ) }) weight 0.5646411388298953
+*n:Num -> ({ *n:State#1 *g:2 面积 是 })({ area_1 ( *n:State#1 ) }) weight 0.9206734041681045
+*n:Query -> ({ *t:Bound *n:Num#1 是 多少 *t:Bound })({ answer ( *n:Num#1 ) }) weight -0.958135902254562
+*n:StateName -> ({ 爱达荷 })({ ' idaho ' }) weight 0.09034044235785844
+*n:StateName -> ({ 南卡罗来纳 })({ ' south carolina ' }) weight 0.1675048678858572
+*n:State -> ({ 最小 *g:2 *n:State#1 })({ smallest ( *n:State#1 ) }) weight -0.05022495275979671
+*n:StateName -> ({ 路易斯安那 })({ ' louisiana ' }) weight 0.07983429392236421
+*n:Query -> ({ *t:Bound *n:City#1 是 哪个 *t:Bound })({ answer ( *n:City#1 ) }) weight 3.3358916966415846
+*n:Query -> ({ *t:Bound 什么 是 *n:Country#1 最大 *g:1 城市 *t:Bound })({ answer ( largest ( city ( loc_2 ( *n:Country#1 ) ) ) ) }) weight 0.21224965633227472
+*n:Query -> ({ *t:Bound 哪个 是 *n:Country#1 最大 *g:1 城市 *t:Bound })({ answer ( largest ( city ( loc_2 ( *n:Country#1 ) ) ) ) }) weight 0.34085095036638535
+*n:StateName -> ({ 佐治亚 })({ ' georgia ' }) weight -0.012571456924750707
+*n:Query -> ({ *t:Bound *n:State#1 *g:2 首府 是 哪儿 *t:Bound })({ answer ( capital ( loc_2 ( *n:State#1 ) ) ) }) weight 0.6858796727012267
+*n:StateName -> ({ 艾奥瓦 })({ ' iowa ' }) weight -0.02071245850836914
+*n:StateName -> ({ 缅因 })({ ' maine ' }) weight 0.5921814381944971
+*n:StateName -> ({ 新罕布什尔 })({ ' new hampshire ' }) weight 0.08008199382447537
+*n:Query -> ({ *t:Bound *n:State#1 *g:2 首都 是 哪儿 *t:Bound })({ answer ( capital ( loc_2 ( *n:State#1 ) ) ) }) weight 0.13292656633330682
+*n:StateName -> ({ 新泽西 })({ ' new jersey ' }) weight -0.08122513492565148
+*n:Place -> ({ 所在 })({ place ( all ) }) weight -0.8960647880136432
+*n:Place -> ({ 最高 点 *n:Place#1 })({ highest ( *n:Place#1 ) }) weight 0.005695457005979128
+*n:State -> ({ *n:Place#1 州 })({ state ( loc_1 ( *n:Place#1 ) ) }) weight -3.911090429007257
+*n:State -> ({ 人口 })({ state ( all ) }) weight 0.8878239217670649
+*n:StateName -> ({ 犹他 })({ ' utah ' }) weight 0.07618905104012587
+*n:State -> ({ 面积 })({ state ( all ) }) weight -0.8115833879036645
+*n:Num -> ({ 所有 50 个 *g:2 总 *n:Num#1 })({ sum ( *n:Num#1 ) }) weight 0.12794425881040453
+*n:Num -> ({ 面积 })({ area_1 ( state ( all ) ) }) weight 0.22792183127284135
+*n:StateName -> ({ 内华达 })({ ' nevada ' }) weight 0.010134380039277328
+*n:CityName -> ({ 德梅因 })({ ' des moines ' }) weight 1.164451258038144
+*n:State -> ({ *n:City#1 *g:1 州 })({ state ( loc_1 ( *n:City#1 ) ) }) weight -2.8559727764336764
+*n:Place -> ({ *n:Country#1 *g:1 最高 点 })({ highest ( place ( loc_2 ( *n:Country#1 ) ) ) }) weight 0.1320901330233387
+*n:Query -> ({ *t:Bound *n:Place#1 *g:1 是 什么 *g:1 *t:Bound })({ answer ( *n:Place#1 ) }) weight 0.7270614266729535
+*n:State -> ({ 面积 最大 *g:2 *n:State#1 })({ largest_one ( area_1 ( *n:State#1 ) ) }) weight 0.16224433014586412
+*n:StateName -> ({ 明尼苏达 *g:1 人口 })({ ' minnesota ' }) weight -0.01460444699492962
+*n:City -> ({ *n:State#1 最多 *g:1 城市 })({ largest_one ( population_1 ( city ( loc_2 ( *n:State#1 ) ) ) ) }) weight 0.7414491626080503
+*n:StateName -> ({ 罗得岛 })({ ' rhode island ' }) weight 0.6294610734647745
+*n:State -> ({ 与 *n:State#1 *g:1 接壤 })({ next_to_2 ( *n:State#1 ) }) weight 0.48423953841726936
+*n:City -> ({ *n:State#1 *g:3 最大 的 城市 })({ largest ( city ( loc_2 ( state ( *n:State#1 ) ) ) ) }) weight -2.0751314158497527
+*n:River -> ({ *n:State#1 最大 *g:1 河流 })({ longest ( river ( loc_2 ( *n:State#1 ) ) ) }) weight 2.6560122386372886
+*n:Query -> ({ *t:Bound *n:River#1 是 什么 *t:Bound })({ answer ( *n:River#1 ) }) weight 0.47675957492558274
+*n:River -> ({ *n:State#1 *g:1 最大 的 河流 })({ longest ( river ( loc_2 ( state ( *n:State#1 ) ) ) ) }) weight -1.2178073856457623
+*n:City -> ({ *n:State#1 最多 *g:1 首府 })({ largest_one ( population_1 ( capital_1 ( *n:State#1 ) ) ) }) weight 2.793160248498452
+*n:City -> ({ *n:State#1 *g:2 首府 })({ capital_1 ( *n:State#1 ) }) weight -0.7975855929283742
+*n:State -> ({ 哪个 })({ state ( all ) }) weight -1.518177640012337
+*n:Num -> ({ *n:River#1 *g:1 长度 是 })({ len ( river ( *n:River#1 ) ) }) weight 0.3540236040331245
+*n:River -> ({ *n:State#1 *g:1 最长 *g:1 河流 })({ longest ( river ( loc_2 ( *n:State#1 ) ) ) }) weight 0.4713106122029652
+*n:Query -> ({ *t:Bound *g:2 *n:River#1 是 哪条 *t:Bound })({ answer ( *n:River#1 ) }) weight 0.06931910599870204
+*n:StateName -> ({ 德克萨斯 })({ ' texas ' }) weight 0.03584716704095228
+*n:River -> ({ *n:Country#1 最长 *g:1 河流 })({ longest ( river ( loc_2 ( *n:Country#1 ) ) ) }) weight 0.37344195490744336
+*n:Place -> ({ *n:State#1 *g:2 最低 点 })({ lowest ( place ( loc_2 ( *n:State#1 ) ) ) }) weight -1.922506435627347
+*n:StateName -> ({ 马萨诸塞 })({ ' massachusetts ' }) weight 0.3074123354601721
+*n:StateName -> ({ 内布拉斯加 })({ ' nebraska ' }) weight 0.010711771791664403
+*n:Place -> ({ *n:State#1 最低 点 })({ lowest ( place ( loc_2 ( *n:State#1 ) ) ) }) weight 2.56186179191997
+*n:State -> ({ *n:State#1 最多 *g:2 是 })({ largest_one ( population_1 ( *n:State#1 ) ) }) weight -0.3778957885053123
+*n:Query -> ({ *t:Bound *n:State#1 *g:3 哪个 *t:Bound })({ answer ( *n:State#1 ) }) weight 4.114250701952669
+*n:Query -> ({ *t:Bound *g:1 *n:State#1 *t:Bound })({ answer ( *n:State#1 ) }) weight -0.24701619567359112
+*n:State -> ({ *n:State#1 最多 的 })({ largest_one ( population_1 ( *n:State#1 ) ) }) weight -1.9268997142892121
+*n:Num -> ({ *n:State#1 *g:2 人口 密度 是 })({ density_1 ( *n:State#1 ) }) weight -0.6527616082984381
+*n:State -> ({ *n:State#1 最小 })({ smallest ( *n:State#1 ) }) weight -0.8663207716683367
+*n:Num -> ({ *n:State#1 *g:3 人口 密度 })({ density_1 ( *n:State#1 ) }) weight 0.7283607177774777
+*n:StateName -> ({ 亚利桑那 })({ ' arizona ' }) weight 0.321257725790378
+*n:CityName -> ({ 马萨诸塞 })({ ' boston ' }) weight -0.2853136873975212
+*n:StateAbbrev -> ({ 波士顿 })({ ' ma ' }) weight 0.08669377067439708
+*n:Num -> ({ *n:City#1 *g:1 人口 是 })({ population_1 ( *n:City#1 ) }) weight 2.4409729209099766
+*n:CityName -> ({ 达拉斯 })({ ' dallas ' }) weight -0.11060570356150275
+*n:StateAbbrev -> ({ 宾夕法尼亚 })({ ' pa ' }) weight 0.3806092103891693
+*n:CityName -> ({ 伊利 市 })({ ' erie ' }) weight 0.3706508416536173
+*n:StateName -> ({ 夏威夷 })({ ' hawaii ' }) weight 0.07695830244947696
+*n:StateName -> ({ 伊利诺伊 州 })({ ' illinois ' }) weight 0.739477338731977
+*n:StateName -> ({ 俄勒冈 })({ ' oregon ' }) weight -0.07401528656319373
+*n:CityName -> ({ 缅因 })({ ' portland ' }) weight -0.5974474304216947
+*n:StateAbbrev -> ({ 波特兰 })({ ' me ' }) weight 0.15075436935261466
+*n:StateName -> ({ 南达科他 })({ ' south dakota ' }) weight -0.07401528656319373
+*n:CityName -> ({ 亚利桑那 })({ ' tempe ' }) weight -0.5198799542249541
+*n:StateAbbrev -> ({ 坦佩 })({ ' az ' }) weight 0.08726618380351191
+*n:City -> ({ *n:CityName#1 *g:2 *n:StateAbbrev#2 })({ cityid ( *n:CityName#1 , *n:StateAbbrev#2 ) }) weight 0.13473911184963197
+*n:StateName -> ({ 威斯康星 })({ ' wisconsin ' }) weight 0.054268464566732295
+*n:StateName -> ({ 爱荷华 })({ ' iowa ' }) weight 0.03477261634518867
+*n:River -> ({ *n:State#1 *g:1 最短 *g:1 河流 })({ shortest ( river ( loc_2 ( *n:State#1 ) ) ) }) weight -0.004295564403196982
+*n:Query -> ({ *t:Bound *n:River#1 *g:2 是 *g:1 *t:Bound })({ answer ( *n:River#1 ) }) weight 1.0532241626024041
+*n:StateName -> ({ 在 阿拉斯加 })({ ' alaska ' }) weight 0.15879006525962266
+*n:City -> ({ *n:State#1 最小 *g:1 城市 })({ smallest ( city ( loc_2 ( *n:State#1 ) ) ) }) weight 0.5937555522824206
+*n:StateName -> ({ 在 夏威夷 })({ ' hawaii ' }) weight 0.19135147428735655
+*n:City -> ({ *n:State#1 *g:1 最小 *g:1 城市 })({ smallest ( city ( loc_2 ( *n:State#1 ) ) ) }) weight 0.36254548155708477
+*n:State -> ({ *n:State#1 最小 *g:2 是 })({ smallest_one ( area_1 ( *n:State#1 ) ) }) weight 0.3282311429590358
+*n:State -> ({ *n:Country#1 最小 *g:2 是 })({ smallest ( state ( loc_2 ( *n:Country#1 ) ) ) }) weight 0.07561816287698224
+*n:State -> ({ *n:State#1 最少 *g:2 是 })({ smallest_one ( population_1 ( *n:State#1 ) ) }) weight 0.08749469988523613
+*n:Num -> ({ *n:State#1 *g:3 人口 })({ population_1 ( state ( *n:State#1 ) ) }) weight -1.4790450209662307
+*n:Num -> ({ *n:Num#1 总数 })({ sum ( *n:Num#1 ) }) weight 0.13160852415534346
+*n:State -> ({ *n:State#1 *g:2 的 })({ state ( *n:State#1 ) }) weight -6.750041980788067
+*n:River -> ({ 河流 流经 *n:State#1 })({ traverse_2 ( *n:State#1 ) }) weight 0.6299386117453429
+*n:Query -> ({ *t:Bound 哪些 *n:River#1 *g:1 *t:Bound })({ answer ( *n:River#1 ) }) weight -0.06141099112200155
+*n:StateName -> ({ 在 犹他 })({ ' utah ' }) weight 0.04295363092110918
+*n:Query -> ({ *t:Bound 什么 *n:River#1 *g:1 *t:Bound })({ answer ( river ( *n:River#1 ) ) }) weight 0.49649685016801215
+*n:State -> ({ 州 *n:Place#1 })({ state ( loc_1 ( *n:Place#1 ) ) }) weight -0.023767386488962778
+*n:Place -> ({ 包含 *n:Country#1 *g:1 最高 点 呢 })({ highest ( place ( loc_2 ( *n:Country#1 ) ) ) }) weight 0.17945602741602976
+*n:Query -> ({ *t:Bound 哪个 *g:1 *n:State#1 *g:1 *t:Bound })({ answer ( *n:State#1 ) }) weight -3.292039227366411
+*n:CityName -> ({ 是 塞勒姆 })({ ' salem ' }) weight 0.40201338733350794
+*n:City -> ({ 首府 *n:City#1 })({ capital ( *n:City#1 ) }) weight -1.1955247696187477
+*n:State -> ({ 州 *g:1 *n:City#1 })({ state ( loc_1 ( *n:City#1 ) ) }) weight -1.6491687384906097
+*n:State -> ({ 有 最大 *g:1 人口 密度 })({ largest_one ( density_1 ( state ( all ) ) ) }) weight 0.47447544855618057
+*n:State -> ({ 拥有 最多 *n:State#1 })({ largest_one ( population_1 ( *n:State#1 ) ) }) weight 0.9460661133041177
+*n:State -> ({ *n:City#1 位于 哪个 })({ loc_1 ( *n:City#1 ) }) weight 0.19082306565822232
+*n:StateName -> ({ 特拉华 })({ ' delaware ' }) weight 0.009650850988995563
+*n:StateName -> ({ 肯塔基 })({ ' kentucky ' }) weight -0.024393739507683882
+*n:State -> ({ 什么 *g:1 *n:State#1 })({ state ( *n:State#1 ) }) weight 0.11192299646529398
+*n:CityName -> ({ 首都 })({ ' dover ' }) weight 0.3054888955551181
+*n:State -> ({ 州 *g:1 *n:State#1 })({ state ( *n:State#1 ) }) weight -4.4264825691760175
+*n:State -> ({ *n:City#1 是 多佛 市 })({ capital_2 ( *n:City#1 ) }) weight 0.07512274785801641
+*n:State -> ({ *n:River#1 哪些 })({ traverse_1 ( river ( *n:River#1 ) ) }) weight 0.2852528933053592
+*n:RiverName -> ({ 俄亥俄 河 经过 })({ ' ohio ' }) weight 0.07570403165656037
+*n:CityName -> ({ 普莱诺 })({ ' plano ' }) weight 0.23174882761603094
+*n:Query -> ({ *t:Bound 哪些 *g:2 *n:State#1 *t:Bound })({ answer ( state ( *n:State#1 ) ) }) weight 0.21245326827481661
+*n:State -> ({ 有 城市 名为 *n:City#1 })({ loc_1 ( city ( *n:City#1 ) ) }) weight 0.19615253195164006
+*n:City -> ({ 城市 })({ city ( all ) }) weight 0.33617291539828315
+*n:City -> ({ 最大 *g:1 *n:City#1 })({ largest ( *n:City#1 ) }) weight 1.4453547344807223
+*n:Query -> ({ *t:Bound *n:City#1 *g:1 是 什么 *t:Bound })({ answer ( *n:City#1 ) }) weight 1.0442547317615205
+*n:Place -> ({ *n:Country#1 *g:1 最低 点 })({ lowest ( place ( loc_2 ( *n:Country#1 ) ) ) }) weight 0.10547197341568185
+*n:Query -> ({ *t:Bound 哪里 是 *n:Place#1 *t:Bound })({ answer ( *n:Place#1 ) }) weight 0.1533899028119315
+*n:StateName -> ({ 新墨西哥 })({ ' new mexico ' }) weight -2.2697057049123166E-13
+*n:River -> ({ 流经 *n:State#1 })({ traverse_2 ( state ( *n:State#1 ) ) }) weight 0.5200333428589955
+*n:Query -> ({ *t:Bound 哪些 河流 *n:River#1 *g:2 *t:Bound })({ answer ( river ( *n:River#1 ) ) }) weight 0.40562796661504436
+*n:State -> ({ *n:State#1 *g:1 与 最多 *g:2 接壤 })({ most ( state ( next_to_2 ( *n:State#1 ) ) ) }) weight 0.47245538375003004
+*n:State -> ({ 有 最多 *g:1 *n:State#1 })({ largest_one ( population_1 ( *n:State#1 ) ) }) weight 0.2519631679129577
+*n:Place -> ({ 哪个 })({ place ( all ) }) weight -1.7060727619235392
+*n:State -> ({ *n:Place#1 *g:1 有 最高 点 })({ loc_1 ( highest ( *n:Place#1 ) ) }) weight 0.2761840708531449
+*n:State -> ({ 有 *n:Place#1 })({ loc_1 ( *n:Place#1 ) }) weight -1.023753287074477
+*n:Place -> ({ 峰 })({ place ( all ) }) weight 0.29644238940874273
+*n:Place -> ({ 最高 *n:Place#1 })({ highest ( *n:Place#1 ) }) weight 0.29644238940874273
+*n:State -> ({ 美国 *g:1 *n:Place#1 })({ loc_1 ( *n:Place#1 ) }) weight 0.6976495125517657
+*n:State -> ({ 拥有 *n:State#1 })({ state ( *n:State#1 ) }) weight -0.07160088058562218
+*n:Place -> ({ 最高 })({ highest ( place ( all ) ) }) weight -1.1054324773805344
+*n:State -> ({ 有 *n:Place#1 *g:1 海拔 })({ loc_1 ( *n:Place#1 ) }) weight -0.11059672584501073
+*n:River -> ({ *n:River#1 最长 })({ longest ( *n:River#1 ) }) weight 0.15118707330300962
+*n:State -> ({ *n:River#1 *g:1 河流 })({ loc_1 ( *n:River#1 ) }) weight -1.8411750710942636
+*n:River -> ({ 有 })({ river ( all ) }) weight 3.866195683383747
+*n:State -> ({ 有 最小 *g:1 人口 密度 })({ smallest_one ( density_1 ( state ( all ) ) ) }) weight 0.1866308376788537
+*n:CityName -> ({ 丹佛 市 位于 })({ ' denver ' }) weight 0.47222716298459977
+*n:Query -> ({ *t:Bound *n:City#1 哪个 *g:1 *t:Bound })({ answer ( state ( loc_1 ( city ( *n:City#1 ) ) ) ) }) weight 1.184638028628363
+*n:State -> ({ 是 最小 })({ smallest ( state ( all ) ) }) weight 0.7907767268971818
+*n:Query -> ({ *t:Bound *n:City#1 *g:1 *t:Bound })({ answer ( state ( loc_1 ( *n:City#1 ) ) ) }) weight -1.0214772924803361
+*n:Query -> ({ *t:Bound *n:State#1 *g:1 *t:Bound })({ answer ( state ( *n:State#1 ) ) }) weight -2.3310577694306
+*n:City -> ({ *n:City#1 是 最大 })({ largest ( *n:City#1 ) }) weight 0.18709214308801445
+*n:State -> ({ 有 名为 *n:City#1 })({ loc_1 ( *n:City#1 ) }) weight 0.2924282346179625
+*n:Place -> ({ 比 *n:Place#1 更高 })({ higher_2 ( *n:Place#1 ) }) weight -0.03441310525718932
+*n:Place -> ({ *n:Place#1 *g:1 点 })({ place ( *n:Place#1 ) }) weight -1.2440517973051903
