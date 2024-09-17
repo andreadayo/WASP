@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<!DOCTYPE examples [
+  <!ELEMENT examples (example*)>
+  <!ELEMENT example (nl*,syn*,augsyn*,mrl*,mrl-parse?,parse*)>
+  <!ELEMENT nl (#PCDATA)>
+  <!ELEMENT syn (#PCDATA)>
+  <!ELEMENT augsyn (#PCDATA)>
+  <!ELEMENT mrl (#PCDATA)>
+  <!ELEMENT mrl-parse (node*)>
+  <!ELEMENT node (#PCDATA)>
+  <!ELEMENT parse (#PCDATA)>
+]>
+<examples>
+
+<example id="26">
+<nl lang="en">
+美国 的 最高 点 有 多高
+</nl>
+<nl lang="es1">
+que tan alto esta el punto mas alto en america ?
+</nl>
+<nl lang="ja">
+amerika no mottomo takai chiten no takasa wa nan desu ka ?
+</nl>
+<nl lang="tr">
+amerika daki en yuksek nokta ne kadar yuksektir ?
+</nl>
+<parse rank="0" score="0.5372800555736852">
+answer(elevation_1(highest(place(loc_2(countryid('usa'))))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Place#1_*g:1_有_多高_*t:Bound_})({_answer_(_elevation\_1_(_*n:Place#1_)_)_})
+  *r:*n:Place_->_({_*n:Country#1_*g:1_最高_点_})({_highest_(_place_(_loc\_2_(_*n:Country#1_)_)_)_})
+    *r:*n:Country_->_({_*n:CountryName#1_})({_countryid_(_*n:CountryName#1_)_})
+      *r:*n:CountryName_->_({_美国_})({_'_usa_'_})
+-->
+</example>
+
+<example id="80">
+<nl lang="en">
+有 多少 人 生活 在 加利福尼亚
+</nl>
+<nl lang="es1">
+cuantas personas viven en california ?
+</nl>
+<nl lang="ja">
+karifuorunia ni wa nannin no hito ga sumimasu ka ?
+</nl>
+<nl lang="tr">
+california da ne kadar insan yasamaktadir ?
+</nl>
+</example>
+
+<example id="97">
+<nl lang="en">
+有 多少 人 住 在 华盛顿 州 的 斯波坎 市
+</nl>
+<nl lang="es1">
+cuantas personas viven en spokane washington ?
+</nl>
+<nl lang="ja">
+washinton no supoken ni wa nannin no hito ga sumimasu ka ?
+</nl>
+<nl lang="tr">
+spokane washington da ne kadar insan yasamaktadir ?
+</nl>
+</example>
+
+<example id="116">
+<nl lang="en">
+在 纽约 州 有 多少 条 河流
+</nl>
+<nl lang="es1">
+cuantos rios hay en new york ?
+</nl>
+<nl lang="ja">
+nyuu yooku ni wa kawa ga ikutsu arimasu ka ?
+</nl>
+<nl lang="tr">
+new york da kac tane nehir vardir ?
+</nl>
+<parse rank="0" score="-14.88524199149262">
+answer(loc_2(stateid('new york')))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*g:1_*n:River#1_*g:2_河流_*t:Bound_})({_answer_(_*n:River#1_)_})
+  *r:*n:River_->_({_*n:State#1_*g:1_有_})({_loc\_2_(_*n:State#1_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_纽约_})({_'_new_york_'_})
+-->
+</example>
+
+<example id="215">
+<nl lang="en">
+加利福尼亚 州 的 主要 城市 是 什么
+</nl>
+<nl lang="es1">
+que son las ciudades mayores en california ?
+</nl>
+<nl lang="ja">
+karifuorunia no ookina toshi wa nan desu ka ?
+</nl>
+<nl lang="tr">
+california daki baslica sehirler nelerdir ?
+</nl>
+<parse rank="0" score="1.6265317807842108">
+answer(major(city(loc_2(stateid('california')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:City#1_*g:1_是_什么_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:2_主要_城市_})({_major_(_city_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_加利福尼亚_})({_'_california_'_})
+-->
+</example>
+
+<example id="222">
+<nl lang="en">
+俄亥俄 州 的 主要 城市 是 什么
+</nl>
+<nl lang="es1">
+que son las ciudades mayores en ohio ?
+</nl>
+<nl lang="ja">
+ohaio ni wa donna daitoshi ga arimasu ka ?
+</nl>
+<nl lang="tr">
+ohio daki baslica sehirler nelerdir ?
+</nl>
+<parse rank="0" score="1.5760654160651664">
+answer(major(city(loc_2(stateid('ohio')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:City#1_*g:1_是_什么_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:2_主要_城市_})({_major_(_city_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_俄亥俄_})({_'_ohio_'_})
+-->
+</example>
+
+<example id="265">
+<nl lang="en">
+在 美国 哪个 首府 最大
+</nl>
+<nl lang="es1">
+que capital es la mas grande en los us ?
+</nl>
+<nl lang="ja">
+beikoku no mottomo ookii shuto wa nan desu ka ?
+</nl>
+<nl lang="tr">
+us deki en genis baskent hangisidir ?
+</nl>
+</example>
+
+<example id="357">
+<nl lang="en">
+所有 50 个 州 的 总 人口 是 多少
+</nl>
+<nl lang="es1">
+que es la poblacion combinada de todos los 50 estados ?
+</nl>
+<nl lang="ja">
+gojuu shuu no zentai no jinkou wa ikura desu ka ?
+</nl>
+<nl lang="tr">
+50 eyaletin toplam nufusu nedir ?
+</nl>
+</example>
+
+<example id="372">
+<nl lang="en">
+美国 最高 的 山峰 是 什么
+</nl>
+<nl lang="es1">
+que es la montana mas alta en los us ?
+</nl>
+<nl lang="ja">
+beikoku no mottomo takai yama wa nan desu ka ?
+</nl>
+<nl lang="tr">
+us deki en yuksek dag nedir ?
+</nl>
+</example>
+
+<example id="381">
+<nl lang="en">
+蒙大拿 州 的 最高 点 是 什么
+</nl>
+<nl lang="es1">
+que es el punto mas alto en montana ?
+</nl>
+<nl lang="ja">
+montana no mottomo takai chiten wa nan desu ka ?
+</nl>
+<nl lang="tr">
+montana daki en yuksek nokta nedir ?
+</nl>
+<parse rank="0" score="1.0935563037402545">
+answer(highest(place(loc_2(stateid('montana')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Place#1_*g:1_是_什么_*g:1_*t:Bound_})({_answer_(_*n:Place#1_)_})
+  *r:*n:Place_->_({_*n:State#1_*g:2_最高_点_})({_highest_(_place_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_蒙大拿_})({_'_montana_'_})
+-->
+</example>
+
+<example id="386">
+<nl lang="en">
+与 佐治亚 州 接壤 的 州 的 最高 点 是 什么
+</nl>
+<nl lang="es1">
+que es el punto mas alto en los estados bordeando a georgia ?
+</nl>
+<nl lang="ja">
+joojaa ni rinsetsu suru shuu no mottomo takai chiten wa nan desu ka ?
+</nl>
+<nl lang="tr">
+georgia ya siniri olan eyaletlerdeki en yuksek nokta nedir ?
+</nl>
+<parse rank="0" score="-4.47762295892047">
+answer(highest(place(loc_2(state(next_to_2(stateid('georgia')))))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Place#1_*g:1_是_什么_*g:1_*t:Bound_})({_answer_(_*n:Place#1_)_})
+  *r:*n:Place_->_({_*n:State#1_*g:2_最高_点_})({_highest_(_place_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:State#1_*g:2_的_})({_state_(_*n:State#1_)_})
+      *r:*n:State_->_({_与_*n:State#1_*g:1_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+        *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+          *r:*n:StateName_->_({_佐治亚_})({_'_georgia_'_})
+-->
+</example>
+
+<example id="464">
+<nl lang="en">
+阿肯色 州 的 最低 点 是 什么
+</nl>
+<nl lang="es1">
+que es el punto mas bajo en arkansas ?
+</nl>
+<nl lang="ja">
+aakansaa no mottomo hikui chiten wa nan desu ka ?
+</nl>
+<nl lang="tr">
+arkansas daki en alcak nokta nerededir ?
+</nl>
+</example>
+
+<example id="473">
+<nl lang="en">
+在 得克萨斯 州 的 最低 点 是 什么
+</nl>
+<nl lang="es1">
+que es el punto mas bajo en el estado de texas ?
+</nl>
+<nl lang="ja">
+tekisasu no shuu no mottomo hikui chiten wa nan desu ka ?
+</nl>
+<nl lang="tr">
+texas eyaletinin en alcak noktasi nedir ?
+</nl>
+</example>
+
+<example id="526">
+<nl lang="en">
+纽约 市 的 人口 有 多少
+</nl>
+<nl lang="es1">
+que es la poblacion de la ciudad new york ?
+</nl>
+<nl lang="ja">
+nyuu yooku toshi no jinkou wa nan desu ka ?
+</nl>
+<nl lang="tr">
+new york sehrinin nufusu nedir ?
+</nl>
+<parse rank="0" score="-6.344545124138456">
+answer(population_1(state(stateid('new york'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Num#1_*g:1_多少_*g:1_*t:Bound_})({_answer_(_*n:Num#1_)_})
+  *r:*n:Num_->_({_*n:State#1_*g:3_人口_})({_population\_1_(_state_(_*n:State#1_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_纽约_})({_'_new_york_'_})
+-->
+</example>
+
+<example id="535">
+<nl lang="en">
+美国 密苏里 州 斯普林菲尔德 的 人口 是 多少
+</nl>
+<nl lang="es1">
+que es la poblacion de springfield missouri ?
+</nl>
+<nl lang="ja">
+mizuuri no supuringufiirudo no jinkou wa nan desu ka ?
+</nl>
+<nl lang="tr">
+springfield missouri in nufusu nedir ?
+</nl>
+</example>
+
+<example id="573">
+<nl lang="en">
+在 美国 最小 的 城市 是 哪个
+</nl>
+<nl lang="es1">
+que es la ciudad mas pequena en los usa ?
+</nl>
+<nl lang="ja">
+beikoku no mottomo chiisai toshi wa nan desu ka ?
+</nl>
+<nl lang="tr">
+usa deki en kucuk sehir nedir ?
+</nl>
+<parse rank="0" score="-0.8821835935230666">
+answer(smallest(state(loc_2(countryid('usa')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:State#1_*g:3_哪个_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_*n:Country#1_最小_*g:2_是_})({_smallest_(_state_(_loc\_2_(_*n:Country#1_)_)_)_})
+    *r:*n:Country_->_({_*n:CountryName#1_})({_countryid_(_*n:CountryName#1_)_})
+      *r:*n:CountryName_->_({_在_美国_})({_'_usa_'_})
+-->
+</example>
+
+<example id="574">
+<nl lang="en">
+华盛顿 的 最小 的 城市 是 哪个
+</nl>
+<nl lang="es1">
+que es la ciudad mas pequena en washington ?
+</nl>
+<nl lang="ja">
+washinton no mottomo chiisai toshi wa nan desu ka ?
+</nl>
+<nl lang="tr">
+washington daki en kucuk sehir nedir ?
+</nl>
+<parse rank="0" score="3.2008201179580107">
+answer(smallest(city(loc_2(stateid('washington')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:City#1_是_哪个_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:1_最小_*g:1_城市_})({_smallest_(_city_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_华盛顿_})({_'_washington_'_})
+-->
+</example>
+
+<example id="595">
+<nl lang="en">
+美国 的 总 面积 是 多少
+</nl>
+<nl lang="es1">
+que es la area total de los usa ?
+</nl>
+<nl lang="ja">
+amerika no zentai no chiiki wa nan desu ka ?
+</nl>
+<nl lang="tr">
+usa nin toplam yuzolcumu nedir ?
+</nl>
+</example>
+
+<example id="633">
+<nl lang="en">
+什么 河流 贯穿 与 首府 亚特兰大 所在 州 接壤 的 州
+</nl>
+<nl lang="es1">
+que rios corren por los estados que bordean a el estado con la capital atlanta ?
+</nl>
+<nl lang="ja">
+ataranta wo shuto ni motsu shuu ni rinsetsu suru shuu wo nagareru kawa wa nan desu ka ?
+</nl>
+<nl lang="tr">
+baskenti atlanta olan eyalete komsu eyaletlerden gecen nehir nedir ?
+</nl>
+</example>
+
+<example id="637">
+<nl lang="en">
+哪些 州 与 密歇根 州 接壤
+</nl>
+<nl lang="es1">
+cual estado bordea a michigan ?
+</nl>
+<nl lang="ja">
+mishigan ni rinsetsu suru shuu wa dochira desu ka ?
+</nl>
+<nl lang="tr">
+hangi eyaletin michigan ya siniri vardir ?
+</nl>
+</example>
+
+<example id="698">
+<nl lang="en">
+什么 州 与 佛罗里达 州 接壤
+</nl>
+<nl lang="es1">
+cuales estados bordean a florida ?
+</nl>
+<nl lang="ja">
+furorida ni rinsetsu suru shuu wa nan desu ka ?
+</nl>
+<nl lang="tr">
+florida a siniri olan eyaletler nelerdir ?
+</nl>
+<parse rank="0" score="1.887469747311075">
+answer(state(next_to_2(stateid('florida'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*g:1_*n:State#1_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_什么_*g:1_*n:State#1_})({_state_(_*n:State#1_)_})
+    *r:*n:State_->_({_与_*n:State#1_*g:1_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+      *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+        *r:*n:StateName_->_({_佛罗里达_})({_'_florida_'_})
+-->
+</example>
+
+<example id="699">
+<nl lang="en">
+什么 州 与 佐治亚 州 接壤
+</nl>
+<nl lang="es1">
+cuales estados bordean a georgia ?
+</nl>
+<nl lang="ja">
+joojaa ni rinsetsu suru shuu wa nan desu ka ?
+</nl>
+<nl lang="tr">
+georgia a siniri olan eyaletler nelerdir ?
+</nl>
+<parse rank="0" score="1.870758448476213">
+answer(state(next_to_2(stateid('georgia'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*g:1_*n:State#1_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_什么_*g:1_*n:State#1_})({_state_(_*n:State#1_)_})
+    *r:*n:State_->_({_与_*n:State#1_*g:1_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+      *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+        *r:*n:StateName_->_({_佐治亚_})({_'_georgia_'_})
+-->
+</example>
+
+<example id="700">
+<nl lang="en">
+什么 州 与 夏威夷 州 接壤
+</nl>
+<nl lang="es1">
+cuales estados bordean a hawaii ?
+</nl>
+<nl lang="ja">
+hawai ni rinsetsu suru shuu wa nan desu ka ?
+</nl>
+<nl lang="tr">
+hawaii a siniri olan eyaletler nelerdir ?
+</nl>
+<parse rank="0" score="1.9602882078504407">
+answer(state(next_to_2(stateid('hawaii'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*g:1_*n:State#1_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_什么_*g:1_*n:State#1_})({_state_(_*n:State#1_)_})
+    *r:*n:State_->_({_与_*n:State#1_*g:1_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+      *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+        *r:*n:StateName_->_({_夏威夷_})({_'_hawaii_'_})
+-->
+</example>
+
+<example id="708">
+<nl lang="en">
+什么 州 与 俄亥俄 州 接壤
+</nl>
+<nl lang="es1">
+cuales estados bordean a ohio ?
+</nl>
+<nl lang="ja">
+ohaio ni rinsetsu suru shuu wa nan desu ka ?
+</nl>
+<nl lang="tr">
+ohio ya siniri bulunan eyaletler nelerdir ?
+</nl>
+<parse rank="0" score="1.809636264902852">
+answer(state(next_to_2(stateid('ohio'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*g:1_*n:State#1_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_什么_*g:1_*n:State#1_})({_state_(_*n:State#1_)_})
+    *r:*n:State_->_({_与_*n:State#1_*g:1_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+      *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+        *r:*n:StateName_->_({_俄亥俄_})({_'_ohio_'_})
+-->
+</example>
+
+<example id="858">
+<nl lang="en">
+哪些 州 与 得克萨斯 州 接壤
+</nl>
+<nl lang="es1">
+cuales estados bordean a texas ?
+</nl>
+<nl lang="ja">
+tekisasu ni rinsetsu suru shuu wa nan desu ka ?
+</nl>
+<nl lang="tr">
+hangi eyaletin texas ye siniri vardir ?
+</nl>
+<parse rank="0" score="2.0507237985055045">
+answer(state(next_to_2(stateid('texas'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_哪些_*g:2_*n:State#1_*t:Bound_})({_answer_(_state_(_*n:State#1_)_)_})
+  *r:*n:State_->_({_与_*n:State#1_*g:1_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_得克萨斯_州_})({_'_texas_'_})
+-->
+</example>
+
+</examples>
