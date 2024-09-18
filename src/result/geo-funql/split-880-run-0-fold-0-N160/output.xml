@@ -1,0 +1,884 @@
+<?xml version="1.0"?>
+<!DOCTYPE examples [
+  <!ELEMENT examples (example*)>
+  <!ELEMENT example (nl*,syn*,augsyn*,mrl*,mrl-parse?,parse*)>
+  <!ELEMENT nl (#PCDATA)>
+  <!ELEMENT syn (#PCDATA)>
+  <!ELEMENT augsyn (#PCDATA)>
+  <!ELEMENT mrl (#PCDATA)>
+  <!ELEMENT mrl-parse (node*)>
+  <!ELEMENT node (#PCDATA)>
+  <!ELEMENT parse (#PCDATA)>
+]>
+<examples>
+
+<example id="8">
+<nl lang="en">
+给 我 在 得克萨斯 州 的 城市
+</nl>
+</example>
+
+<example id="9">
+<nl lang="en">
+给 我 在 美国 的 城市
+</nl>
+</example>
+
+<example id="11">
+<nl lang="en">
+给 我 在 德克萨斯 州 的 城市
+</nl>
+</example>
+
+<example id="14">
+<nl lang="en">
+给 我 流经 美国 的 最长 的 河流
+</nl>
+</example>
+
+<example id="16">
+<nl lang="en">
+告诉我 与 犹他 州 接壤 的 州
+</nl>
+</example>
+
+<example id="17">
+<nl lang="en">
+阿拉斯加 州 有 多大
+</nl>
+</example>
+
+<example id="43">
+<nl lang="en">
+密西西比 河 有 多少 英里 长
+</nl>
+</example>
+
+<example id="47">
+<nl lang="en">
+里奥格兰德 河 有 多长
+</nl>
+<nl lang="es1">
+cuanto tiene de largo el rio rio grande ?
+</nl>
+<nl lang="ja">
+rio gurande kawa no nagasa wa dore gurai desu ka ?
+</nl>
+<nl lang="tr">
+rio grande nehrinin uzunlugu ne kadardir ?
+</nl>
+</example>
+
+<example id="53">
+<nl lang="en">
+在 美国 有 多少 城市
+</nl>
+<parse rank="0" score="4.559509733181235">
+answer(count(city(loc_2(countryid('usa')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_在_*n:Country#1_有_多少_城市_*t:Bound_})({_answer_(_count_(_city_(_loc\_2_(_*n:Country#1_)_)_)_)_})
+  *r:*n:Country_->_({_*n:CountryName#1_})({_countryid_(_*n:CountryName#1_)_})
+    *r:*n:CountryName_->_({_美国_})({_'_usa_'_})
+-->
+</example>
+
+<example id="57">
+<nl lang="en">
+在 得克萨斯 州 有 多少 城市 呢
+</nl>
+</example>
+
+<example id="66">
+<nl lang="en">
+在 亚利桑那 州 的 主要 城市 有 多少
+</nl>
+</example>
+
+<example id="88">
+<nl lang="en">
+有 多少 人 住 在 密西西比 州
+</nl>
+</example>
+
+<example id="89">
+<nl lang="en">
+有 多少 人 住 在 蒙大拿 州
+</nl>
+</example>
+
+<example id="106">
+<nl lang="en">
+有 多少 人 住 在 华盛顿 特区
+</nl>
+<parse rank="0" score="-0.5593198913591402">
+answer(population_1(stateid('washington')))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_有_多少_*g:1_*n:Num#1_*g:1_*t:Bound_})({_answer_(_*n:Num#1_)_})
+  *r:*n:Num_->_({_人_*n:State#1_})({_population\_1_(_*n:State#1_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_住_在_华盛顿_})({_'_washington_'_})
+-->
+</example>
+
+<example id="115">
+<nl lang="en">
+在 密苏里 州 有 多少 条 河流
+</nl>
+</example>
+
+<example id="139">
+<nl lang="en">
+有 多少 州 与 科罗拉多 州 和 新墨西哥 州 接壤
+</nl>
+</example>
+
+<example id="163">
+<nl lang="en">
+含有 名为 斯普林菲尔德 的 城市 或 小镇 的 州 有 多少
+</nl>
+</example>
+
+<example id="165">
+<nl lang="en">
+最短 的 河流 贯穿 美国 多少 州
+</nl>
+</example>
+
+<example id="178">
+<nl lang="en">
+列出 在 密歇根 州 的 主要 湖泊
+</nl>
+</example>
+
+<example id="193">
+<nl lang="en">
+说出 面积 最大 的 州
+</nl>
+</example>
+
+<example id="200">
+<nl lang="en">
+德克萨斯 州 的 主要 河流 是 哪些
+</nl>
+</example>
+
+<example id="203">
+<nl lang="en">
+德克萨斯 州 的 首府 城市 是 什么
+</nl>
+</example>
+
+<example id="204">
+<nl lang="en">
+与 密苏里 接壤 的 州 的 首府 是 什么
+</nl>
+</example>
+
+<example id="209">
+<nl lang="en">
+所有 州 的 最高 点 是 什么
+</nl>
+</example>
+
+<example id="215">
+<nl lang="en">
+加利福尼亚 州 的 主要 城市 是 什么
+</nl>
+<nl lang="es1">
+que son las ciudades mayores en california ?
+</nl>
+<nl lang="ja">
+karifuorunia no ookina toshi wa nan desu ka ?
+</nl>
+<nl lang="tr">
+california daki baslica sehirler nelerdir ?
+</nl>
+<parse rank="0" score="6.726610065666532">
+answer(major(city(loc_2(stateid('california')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:City#1_*g:1_什么_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:2_主要_城市_是_})({_major_(_city_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_加利福尼亚_})({_'_california_'_})
+-->
+</example>
+
+<example id="221">
+<nl lang="en">
+北卡罗来纳 州 的 主要 城市 是 什么
+</nl>
+</example>
+
+<example id="238">
+<nl lang="en">
+在 俄亥俄 州 有 哪些 主要 河流
+</nl>
+<nl lang="es1">
+que son los rios mayores en ohio ?
+</nl>
+<nl lang="ja">
+ohaio no ookina kawa wa nan desu ka ?
+</nl>
+<nl lang="tr">
+ohio daki baslica nehirler nelerdir ?
+</nl>
+</example>
+
+<example id="249">
+<nl lang="en">
+与 德 州 接壤 的 州 的 人口 是 多少
+</nl>
+</example>
+
+<example id="253">
+<nl lang="en">
+密西西比 河 所 贯穿 的 州 的 人口 是 多少
+</nl>
+<parse rank="0" score="11.192803182266129">
+answer(population_1(state(traverse_1(riverid('mississippi')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Num#1_*g:2_多少_*t:Bound_})({_answer_(_*n:Num#1_)_})
+  *r:*n:Num_->_({_*n:State#1_*g:3_人口_是_})({_population\_1_(_state_(_*n:State#1_)_)_})
+    *r:*n:State_->_({_*n:River#1_*g:1_贯穿_})({_traverse\_1_(_*n:River#1_)_})
+      *r:*n:River_->_({_*n:RiverName#1_})({_riverid_(_*n:RiverName#1_)_})
+        *r:*n:RiverName_->_({_密西西比_河_})({_'_mississippi_'_})
+-->
+</example>
+
+<example id="263">
+<nl lang="en">
+你 能 告诉 我 密苏里 州 的 人口 是 多少 吗
+</nl>
+</example>
+
+<example id="277">
+<nl lang="en">
+与 加 州 相邻 的 是 哪个 州
+</nl>
+</example>
+
+<example id="290">
+<nl lang="en">
+最大 的 州 的 面积 是 多少
+</nl>
+<nl lang="es1">
+que es la area de el estado mas grande ?
+</nl>
+<nl lang="ja">
+mottomo ookii shuu no chiiki wa nan desu ka ?
+</nl>
+<nl lang="tr">
+en genis eyaletin yuzolcumu nedir ?
+</nl>
+</example>
+
+<example id="309">
+<nl lang="en">
+在 最小 的 州 中 最大 的 城市 是 哪个
+</nl>
+</example>
+
+<example id="316">
+<nl lang="en">
+美国 最大 的 州 是 哪个
+</nl>
+<parse rank="0" score="13.028857892966574">
+answer(largest(state(loc_2(countryid('usa')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:State#1_*g:3_哪个_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_*n:Country#1_最大_*g:2_是_})({_largest_(_state_(_loc\_2_(_*n:Country#1_)_)_)_})
+    *r:*n:Country_->_({_*n:CountryName#1_})({_countryid_(_*n:CountryName#1_)_})
+      *r:*n:CountryName_->_({_美国_})({_'_usa_'_})
+-->
+</example>
+
+<example id="320">
+<nl lang="en">
+科罗拉多 州 的 首府 是 什么
+</nl>
+<parse rank="0" score="6.601505507028929">
+answer(capital(loc_2(stateid('colorado'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:State#1_*g:2_首府_是_什么_*t:Bound_})({_answer_(_capital_(_loc\_2_(_*n:State#1_)_)_)_})
+  *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+    *r:*n:StateName_->_({_科罗拉多_})({_'_colorado_'_})
+-->
+</example>
+
+<example id="343">
+<nl lang="en">
+和 最多 州 接壤 的 州 的 首府 是 什么
+</nl>
+</example>
+
+<example id="346">
+<nl lang="en">
+最高 点 所在 州 的 首府 是 什么
+</nl>
+<nl lang="es1">
+que es la capital de el estado con el punto mas alto ?
+</nl>
+<nl lang="ja">
+mottomo takai chiten ga aru shuu no shuto wa nan desu ka ?
+</nl>
+<nl lang="tr">
+en yuksek noktayi iceren eyaletin baskenti nedir ?
+</nl>
+<parse rank="0" score="7.199562958549798">
+answer(capital(loc_2(loc_1(highest(place(loc_2(state(all))))))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:State#1_*g:2_首府_是_什么_*t:Bound_})({_answer_(_capital_(_loc\_2_(_*n:State#1_)_)_)_})
+  *r:*n:State_->_({_*n:Place#1_所在_})({_loc\_1_(_*n:Place#1_)_})
+    *r:*n:Place_->_({_最高_*n:Place#1_})({_highest_(_*n:Place#1_)_})
+      *r:*n:Place_->_({_点_})({_place_(_loc\_2_(_state_(_all_)_)_)_})
+-->
+</example>
+
+<example id="353">
+<nl lang="en">
+华盛顿 州 的 首府 是 什么
+</nl>
+<nl lang="es1">
+que es la capital de washington ?
+</nl>
+<nl lang="ja">
+washinton no chuto wa nan desu ka ?
+</nl>
+<nl lang="tr">
+washington in baskenti nedir ?
+</nl>
+</example>
+
+<example id="354">
+<nl lang="en">
+德克萨斯 州 人口 最多 的 城市 是 哪个
+</nl>
+<parse rank="0" score="7.95237472617697">
+answer(largest_one(population_1(city(loc_2(stateid('texas'))))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:City#1_是_哪个_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:2_最多_*g:1_城市_})({_largest\_one_(_population\_1_(_city_(_loc\_2_(_*n:State#1_)_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_德克萨斯_})({_'_texas_'_})
+-->
+</example>
+
+<example id="361">
+<nl lang="en">
+美国 最高 点 的 海拔 是 多少
+</nl>
+</example>
+
+<example id="369">
+<nl lang="en">
+美国 最高 海拔 是 哪儿
+</nl>
+</example>
+
+<example id="374">
+<nl lang="en">
+科罗拉多 州 的 最高 点 是 什么
+</nl>
+<nl lang="es1">
+que es el punto mas alto en colorado ?
+</nl>
+<nl lang="ja">
+kororado no mottomo takai chiten wa nan desu ka ?
+</nl>
+<nl lang="tr">
+colorado daki en yuksek nokta nedir ?
+</nl>
+<parse rank="0" score="9.56558161630745">
+answer(highest(place(loc_2(stateid('colorado')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Place#1_*g:2_什么_*t:Bound_})({_answer_(_*n:Place#1_)_})
+  *r:*n:Place_->_({_*n:State#1_*g:2_最高_点_是_})({_highest_(_place_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_科罗拉多_})({_'_colorado_'_})
+-->
+</example>
+
+<example id="388">
+<nl lang="en">
+这个 国家 的 最高 点 是 什么
+</nl>
+<nl lang="es1">
+que es el punto mas alto en el pais ?
+</nl>
+<nl lang="ja">
+kuni no mottomo takai chiten wa nan desu ka ?
+</nl>
+<nl lang="tr">
+ulkedeki en yuksek nokta nedir ?
+</nl>
+</example>
+
+<example id="402">
+<nl lang="en">
+人口 密度 最小 的 州 的 最高 点 是 什么
+</nl>
+</example>
+
+<example id="405">
+<nl lang="en">
+美国 最大 的 首府 城市 是 哪个
+</nl>
+</example>
+
+<example id="407">
+<nl lang="en">
+阿拉巴马 州 最大 的 城市 是 哪个
+</nl>
+<parse rank="0" score="10.692094623317253">
+answer(largest(city(loc_2(stateid('alabama')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:City#1_是_哪个_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:1_最大_*g:1_城市_})({_largest_(_city_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_阿拉巴马_})({_'_alabama_'_})
+-->
+</example>
+
+<example id="409">
+<nl lang="en">
+密歇根 州 最大 的 城市 是 哪个
+</nl>
+</example>
+
+<example id="414">
+<nl lang="en">
+与 加利福尼亚 州 接壤 的 州 的 最大 的 城市 是 什么
+</nl>
+<nl lang="es1">
+que es la ciudad mas grande en los estados que bordean a california ?
+</nl>
+<nl lang="ja">
+karifuorunia ni rinsetsu suru shuu no mottomo ookii toshi wa nan desu ka ?
+</nl>
+<nl lang="tr">
+california ya komsu eyaletler deki en genis sehir nedir ?
+</nl>
+</example>
+
+<example id="415">
+<nl lang="en">
+德克萨斯 州 最大 的 城市 是 什么
+</nl>
+<parse rank="0" score="7.553133008116758">
+answer(largest(city(loc_2(stateid('texas')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*g:1_*n:City#1_是_什么_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:1_最大_*g:1_城市_})({_largest_(_city_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_德克萨斯_})({_'_texas_'_})
+-->
+</example>
+
+<example id="417">
+<nl lang="en">
+威斯康星 州 最大 的 城市 是 什么
+</nl>
+<nl lang="es1">
+que es la ciudad mas grande en wisconsin ?
+</nl>
+<nl lang="ja">
+uisukonshin no mottomo ookii toshi wa nan desu ka ?
+</nl>
+<nl lang="tr">
+wisconsin deki en genis sehir nedir ?
+</nl>
+<parse rank="0" score="8.241837971388586">
+answer(largest(city(loc_2(stateid('wisconsin')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*g:1_*n:City#1_是_什么_*t:Bound_})({_answer_(_*n:City#1_)_})
+  *r:*n:City_->_({_*n:State#1_*g:1_最大_*g:1_城市_})({_largest_(_city_(_loc\_2_(_*n:State#1_)_)_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_威斯康星_})({_'_wisconsin_'_})
+-->
+</example>
+
+<example id="423">
+<nl lang="en">
+与 得克萨斯 州 接壤 的 最大 的 州 是 哪个
+</nl>
+<parse rank="0" score="16.736978910595788">
+answer(largest(state(next_to_2(stateid('texas')))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:State#1_*g:3_哪个_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_*n:State#1_*g:1_最大_*g:2_是_})({_largest_(_state_(_*n:State#1_)_)_})
+    *r:*n:State_->_({_与_*n:State#1_*g:2_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+      *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+        *r:*n:StateName_->_({_得克萨斯_})({_'_texas_'_})
+-->
+</example>
+
+<example id="457">
+<nl lang="en">
+美国 最长 的 河流 是 哪条
+</nl>
+<nl lang="es1">
+que es el rio mas largo en los us ?
+</nl>
+<nl lang="ja">
+beikoku no mottomo nagai kawa wa nan desu ka ?
+</nl>
+<nl lang="tr">
+us deki en uzun nehir nedir ?
+</nl>
+</example>
+
+<example id="484">
+<nl lang="en">
+美国 人口 最多 的 首府 是 哪个
+</nl>
+</example>
+
+<example id="503">
+<nl lang="en">
+波士顿 的 人口 是 多少
+</nl>
+</example>
+
+<example id="524">
+<nl lang="en">
+新墨西哥 州 的 人口 是 多少
+</nl>
+<parse rank="0" score="8.573335193788969">
+answer(population_1(stateid('new mexico')))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Num#1_*g:2_多少_*t:Bound_})({_answer_(_*n:Num#1_)_})
+  *r:*n:Num_->_({_*n:State#1_*g:2_人口_是_})({_population\_1_(_*n:State#1_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_新墨西哥_})({_'_new_mexico_'_})
+-->
+</example>
+
+<example id="527">
+<nl lang="en">
+俄勒冈 州 的 人口 是 多少
+</nl>
+<nl lang="es1">
+que es la poblacion de oregon ?
+</nl>
+<nl lang="ja">
+oregon no jinkou wa nan desu ka ?
+</nl>
+<nl lang="tr">
+oregon nun nufusu nedir ?
+</nl>
+<parse rank="0" score="8.427509256778043">
+answer(population_1(stateid('oregon')))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Num#1_*g:2_多少_*t:Bound_})({_answer_(_*n:Num#1_)_})
+  *r:*n:Num_->_({_*n:State#1_*g:2_人口_是_})({_population\_1_(_*n:State#1_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_俄勒冈_})({_'_oregon_'_})
+-->
+</example>
+
+<example id="543">
+<nl lang="en">
+最大 的 州 的 人口 是 多少
+</nl>
+<parse rank="0" score="8.573012277159325">
+answer(population_1(state(largest(state(all)))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:Num#1_*g:2_多少_*t:Bound_})({_answer_(_*n:Num#1_)_})
+  *r:*n:Num_->_({_*n:State#1_*g:3_人口_是_})({_population\_1_(_state_(_*n:State#1_)_)_})
+    *r:*n:State_->_({_最大_})({_largest_(_state_(_all_)_)_})
+-->
+</example>
+
+<example id="555">
+<nl lang="en">
+哪个 是 最短 的 河流
+</nl>
+<nl lang="es1">
+que es el rio mas corto ?
+</nl>
+<nl lang="ja">
+mottomo mijikai kawa wa nan desu ka ?
+</nl>
+<nl lang="tr">
+en kisa nehir nedir ?
+</nl>
+</example>
+
+<example id="583">
+<nl lang="en">
+被 最长 的 河流 贯穿 的 最小 的 州 是 哪个
+</nl>
+</example>
+
+<example id="596">
+<nl lang="en">
+美国 所有 的 河流 的 总 长度 是 多少
+</nl>
+</example>
+
+<example id="601">
+<nl lang="en">
+在 阿拉斯加 州 有 什么 山
+</nl>
+</example>
+
+<example id="609">
+<nl lang="en">
+哪条 河流 贯穿 弗吉尼亚
+</nl>
+</example>
+
+<example id="614">
+<nl lang="en">
+俄勒冈 州 有 什么 河流
+</nl>
+</example>
+
+<example id="639">
+<nl lang="en">
+哪些 州 与 纽约 州 接壤
+</nl>
+<parse rank="0" score="5.1117891322191165">
+answer(state(next_to_2(stateid('new york'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_哪些_*g:1_*n:State#1_*g:2_*t:Bound_})({_answer_(_state_(_*n:State#1_)_)_})
+  *r:*n:State_->_({_与_*n:State#1_*g:2_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_纽约_})({_'_new_york_'_})
+-->
+</example>
+
+<example id="640">
+<nl lang="en">
+哪个 州 与 其它 州 接壤 最少
+</nl>
+</example>
+
+<example id="667">
+<nl lang="en">
+哪个 州 拥有 流经 它的 最多 主要 河流
+</nl>
+</example>
+
+<example id="674">
+<nl lang="en">
+哪个 州 有 最少 的 人口
+</nl>
+</example>
+
+<example id="675">
+<nl lang="en">
+哪个 州 具有 最小 的 人口 密度
+</nl>
+</example>
+
+<example id="679">
+<nl lang="en">
+奥斯汀 是 哪个 州 的 首府
+</nl>
+<parse rank="0" score="6.753211638310033">
+answer(state(loc_1(capital(cityid('austin',_)))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_*n:City#1_是_哪个_*g:2_首府_*t:Bound_})({_answer_(_state_(_loc\_1_(_capital_(_*n:City#1_)_)_)_)_})
+  *r:*n:City_->_({_*n:CityName#1_})({_cityid_(_*n:CityName#1_,_\__)_})
+    *r:*n:CityName_->_({_奥斯汀_})({_'_austin_'_})
+-->
+</example>
+
+<example id="681">
+<nl lang="en">
+哥伦布 是 哪个 州 的 首府
+</nl>
+<nl lang="es1">
+de cual estado es columbus la capital ?
+</nl>
+<nl lang="ja">
+koronbaasu wa dono shuu no shuto desu ka ?
+</nl>
+<nl lang="tr">
+columbus hangi eyaletin baskentidir ?
+</nl>
+</example>
+
+<example id="682">
+<nl lang="en">
+达拉斯 在 哪个 州
+</nl>
+</example>
+
+<example id="693">
+<nl lang="en">
+什么 州 与 得克萨斯 州 相邻
+</nl>
+</example>
+
+<example id="705">
+<nl lang="en">
+什么 州 与 蒙大拿 州 接壤
+</nl>
+<nl lang="es1">
+cuales estados bordean a montana ?
+</nl>
+<nl lang="ja">
+montana ni rinsetsu suru shuu wa nan desu ka ?
+</nl>
+<nl lang="tr">
+montana a siniri olan eyaletler nelerdir ?
+</nl>
+<parse rank="0" score="5.101476129132168">
+answer(state(next_to_2(stateid('montana'))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_什么_*g:1_*n:State#1_*t:Bound_})({_answer_(_state_(_*n:State#1_)_)_})
+  *r:*n:State_->_({_与_*n:State#1_*g:2_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+    *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+      *r:*n:StateName_->_({_蒙大拿_})({_'_montana_'_})
+-->
+</example>
+
+<example id="712">
+<nl lang="en">
+什么 州 和 与 佛罗里达 州 接壤 的 州 接壤 的 州 接壤
+</nl>
+<parse rank="0" score="17.502049755545137">
+answer(state(next_to_2(state(next_to_2(next_to_1(stateid('florida')))))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_什么_*g:1_*n:State#1_*t:Bound_})({_answer_(_state_(_*n:State#1_)_)_})
+  *r:*n:State_->_({_和_*n:State#1_*g:2_接壤_})({_next\_to\_2_(_state_(_*n:State#1_)_)_})
+    *r:*n:State_->_({_与_*n:State#1_*g:2_接壤_})({_next\_to\_2_(_*n:State#1_)_})
+      *r:*n:State_->_({_*n:State#1_*g:1_接壤_})({_next\_to\_1_(_*n:State#1_)_})
+        *r:*n:State_->_({_*n:StateName#1_})({_stateid_(_*n:StateName#1_)_})
+          *r:*n:StateName_->_({_佛罗里达_})({_'_florida_'_})
+-->
+</example>
+
+<example id="724">
+<nl lang="en">
+什么 州 和 拥有 最多 主要 城市 的 州 接壤
+</nl>
+<parse rank="0" score="11.46791074411496">
+answer(state(next_to_2(state(most(state(loc_1(major(city(all)))))))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_什么_*g:1_*n:State#1_*t:Bound_})({_answer_(_state_(_*n:State#1_)_)_})
+  *r:*n:State_->_({_和_*n:State#1_*g:2_接壤_})({_next\_to\_2_(_state_(_*n:State#1_)_)_})
+    *r:*n:State_->_({_拥有_最多_*g:1_*n:City#1_})({_most_(_state_(_loc\_1_(_*n:City#1_)_)_)_})
+      *r:*n:City_->_({_主要_*n:City#1_})({_major_(_*n:City#1_)_})
+        *r:*n:City_->_({_城市_})({_city_(_all_)_})
+-->
+</example>
+
+<example id="748">
+<nl lang="en">
+哪些 州 有 叫 科罗拉多 的 河流
+</nl>
+</example>
+
+<example id="752">
+<nl lang="en">
+在 美国 有 什么 州 有 一个 斯普林菲尔德 市
+</nl>
+</example>
+
+<example id="760">
+<nl lang="en">
+达拉斯 市 在 哪里
+</nl>
+</example>
+
+<example id="770">
+<nl lang="en">
+圣地亚哥 市 在 哪里
+</nl>
+</example>
+
+<example id="773">
+<nl lang="en">
+斯普林菲尔德 镇 在 哪里
+</nl>
+</example>
+
+<example id="775">
+<nl lang="en">
+美国 最高 的 山峰 在 哪里
+</nl>
+</example>
+
+<example id="780">
+<nl lang="en">
+哪里 是 爱荷华 州 的 最低 点
+</nl>
+<nl lang="es1">
+donde esta el punto mas bajo en iowa ?
+</nl>
+<nl lang="ja">
+aiowa no mottomo hikui chiten wa nan desu ka ?
+</nl>
+<nl lang="tr">
+iowa daki en alcak nokta nerededir ?
+</nl>
+</example>
+
+<example id="793">
+<nl lang="en">
+哪个 河流 流经 最多 的 州
+</nl>
+</example>
+
+<example id="811">
+<nl lang="en">
+哪个 首府 有 最少 的 人口
+</nl>
+</example>
+
+<example id="831">
+<nl lang="en">
+哪个 州 有 最多 的 人口
+</nl>
+<parse rank="0" score="8.595903542632303">
+answer(largest_one(population_1(state(all))))
+</parse>
+<!--
+*r:*n:Query_->_({_*t:Bound_哪个_*g:2_*n:State#1_*t:Bound_})({_answer_(_*n:State#1_)_})
+  *r:*n:State_->_({_有_最多_*g:1_人口_})({_largest\_one_(_population\_1_(_state_(_all_)_)_)_})
+-->
+</example>
+
+<example id="842">
+<nl lang="en">
+蒙大拿 州 最大 的 城市 在 哪个 州
+</nl>
+</example>
+
+<example id="853">
+<nl lang="en">
+哪些 州 与 密歇根 接壤
+</nl>
+</example>
+
+<example id="874">
+<nl lang="en">
+哪些 州 有 河流
+</nl>
+</example>
+
+</examples>

@@ -1,0 +1,9 @@
+wasp.nl=en
+wasp.mrl=robocup-clang
+wasp.mrl.grammar=/mnt/c/Users/Dhea/Documents/GitHub/WASP/src/data/robocup-clang/mrl-grammar
+wasp.corpus.file=/mnt/c/Users/Dhea/Documents/GitHub/WASP/src/data/robocup-clang/corpus.xml
+wasp.align.model=giza++
+wasp.align.giza++.exec=/home/dhea/giza-pp/GIZA++-v2/GIZA++
+wasp.translation.model=scfg
+wasp.scfg.init=/mnt/c/Users/Dhea/Documents/GitHub/WASP/src/data/robocup-clang/scfg-init-rules
+wasp.kbest=1

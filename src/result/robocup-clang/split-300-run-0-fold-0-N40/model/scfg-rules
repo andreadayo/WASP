@@ -1,0 +1,102 @@
+*n:Ident -> ({ *t:Ident#1 })({ *t:Ident#1 }) weight 0.0
+*n:Num -> ({ *t:Num#1 })({ *t:Num#1 }) weight 1.141730610039325
+*n:Region -> ({ *n:Point#1 })({ *n:Point#1 }) weight -1.0707909086596714
+*n:Statement -> ({ *n:Rule#1 })({ *n:Rule#1 }) weight 2.0075549987160728E-14
+*n:Unum -> ({ *t:Unum#1 })({ *t:Unum#1 }) weight 1.9345048095527553
+*n:Action -> ({ clear *g:2 from *n:Region#1 })({ ( clear *n:Region#1 ) }) weight -3.6035075576948984E-15
+*n:Player -> ({ has })({ *^:Player }) weight -0.46649445645431853
+*n:Player -> ({ player *n:Unum#1 })({ ( player our { *n:Unum#1 } ) }) weight 1.6876754545917394
+*n:Point -> ({ -LRB- *n:Num#1 , *n:Num#2 -RRB- })({ ( pt *n:Num#1 *n:Num#2 ) }) weight 0.20765987640384642
+*n:Action -> ({ should pass *g:3 *n:Region#1 })({ ( pass *n:Region#1 ) }) weight 0.26221526882380164
+*n:Unum -> ({ in })({ 1 }) weight 1.0220278402913252E-14
+*n:Rule -> ({ *t:Bound If *g:1 ball is *n:Unum#2 *n:Region#1 *g:1 then all players except *g:2 *n:Action#3 *t:Bound })({ ( ( bpos *n:Region#1 ) ( do ( player-except our { *n:Unum#2 } ) *n:Action#3 ) ) }) weight 1.6729905075387975E-14
+*n:Action -> ({ not intercept })({ ( intercept ) }) weight -0.015172316621985468
+*n:Team -> ({ our })({ our }) weight 0.0750361648937052
+*n:Condition -> ({ not in *n:Region#1 })({ ( bpos ( left *n:Region#1 ) ) }) weight 0.7450813871531229
+*n:Condition -> ({ and *n:Condition#1 })({ ( not *n:Condition#1 ) }) weight 0.5911195015872719
+*n:Team -> ({ our goal })({ our }) weight -0.02469015638072554
+*n:Rule -> ({ *t:Bound *n:Player#4 *g:1 *n:Action#5 *g:2 if *g:2 is within *n:Num#2 meters of *n:Team#1 goal line *n:Condition#3 *t:Bound })({ ( ( and ( bpos ( from-goal-line *n:Team#1 0 *n:Num#2 ) ) *n:Condition#3 ) ( dont *n:Player#4 *n:Action#5 ) ) }) weight 0.014654799059742324
+*n:Team -> ({ goal })({ our }) weight -0.028012275065342387
+*n:Point -> ({ in front of *n:Team#1 })({ ( front-of-goal *n:Team#1 ) }) weight -0.0035985919884288877
+*n:Condition -> ({ is in *n:Region#1 })({ ( bpos *n:Region#1 ) }) weight 0.273591935283359
+*n:Rule -> ({ *t:Bound If *g:1 *n:Condition#1 *g:1 *n:Directive#2 *t:Bound })({ ( *n:Condition#1 *n:Directive#2 ) }) weight 0.07965048060302223
+*n:Directive -> ({ then position *n:Player#1 directly *n:Region#2 })({ ( do *n:Player#1 ( pos *n:Region#2 ) ) }) weight 0.04025203167955694
+*n:Player -> ({ our team })({ ( player our { 0 } ) }) weight -4.2046551367552224E-14
+*n:Team -> ({ opponent 's })({ opp }) weight -0.3785407376843898
+*n:Condition -> ({ *n:Player#1 *g:2 ball })({ ( bowner *n:Player#1 ) }) weight -0.0020300849925059357
+*n:Condition -> ({ *n:Condition#1 *g:3 is in *g:1 right side of *n:Region#2 })({ ( and *n:Condition#1 ( bpos ( right *n:Region#2 ) ) ) }) weight -1.3489644768523885E-14
+*n:Num -> ({ within })({ 0 }) weight 0.039507940001865
+*n:Condition -> ({ is *n:Region#1 })({ ( bpos *n:Region#1 ) }) weight 0.19210390942642802
+*n:Point -> ({ *n:Point#1 *g:4 attraction *g:1 *n:Point#2 })({ ( pt-with-ball-attraction *n:Point#1 *n:Point#2 ) }) weight 0.010653237450160408
+*n:Directive -> ({ then position *n:Player#1 at *g:1 *n:Region#2 })({ ( do *n:Player#1 ( pos *n:Region#2 ) ) }) weight 0.0774262465194559
+*n:Point -> ({ -LRB- *n:Num#1 , *n:Num#2 })({ ( pt *n:Num#1 *n:Num#2 ) }) weight 0.09576860807028777
+*n:Region -> ({ *n:Ident#1 })({ " *n:Ident#1 " }) weight -4.009113211967201E-15
+*n:Player -> ({ it })({ *^:Player }) weight 0.5767548626316742
+*n:Player -> ({ whoever })({ ( player our { X } ) }) weight 0.0
+*n:Rule -> ({ *t:Bound If *g:1 ball *n:Condition#2 then *n:Condition#1 *g:1 clear *n:Player#3 from *n:Region#4 *t:Bound })({ ( ( and *n:Condition#1 *n:Condition#2 ) ( do *n:Player#3 ( clear *n:Region#4 ) ) ) }) weight 0.0
+*n:Condition -> ({ is *g:1 *n:Region#1 })({ ( bpos *n:Region#1 ) }) weight 0.11755525090788943
+*n:Point -> ({ *n:Num#2 meters *g:1 *n:Team#1 goal })({ ( from-goal *n:Team#1 *n:Num#2 ) }) weight -0.1255067064522257
+*n:Directive -> ({ then *g:1 *n:Player#1 *n:Action#2 })({ ( do *n:Player#1 *n:Action#2 ) }) weight -0.8409679574946183
+*n:Statement -> ({ *t:Bound Let *n:Ident#1 be *g:1 *n:Condition#2 *t:Bound })({ ( definec " *n:Ident#1 " *n:Condition#2 ) }) weight 0.0
+*n:Condition -> ({ condition that *g:3 *n:Condition#1 *g:2 *n:Player#4 *g:2 *n:Team#3 midfield *g:1 no *g:2 is within distance *g:1 *n:Num#5 *g:1 *n:Player#2 })({ ( and *n:Condition#1 ( ppos-any *n:Player#2 ( midfield *n:Team#3 ) ) ( ppos-none opp ( circle ( pt *n:Player#4 ) *n:Num#5 ) ) ) }) weight 0.0
+*n:Condition -> ({ in *g:2 *n:Region#1 })({ ( bpos *n:Region#1 ) }) weight -0.31175771017375975
+*n:Condition -> ({ condition that *g:3 *n:Condition#1 *g:1 *n:Player#2 *g:4 side *g:1 *n:Team#3 *g:2 no opponent is *g:1 distance *n:Num#5 from *g:1 *n:Player#4 })({ ( and *n:Condition#1 ( ppos-any *n:Player#2 ( right ( midfield *n:Team#3 ) ) ) ( ppos-none opp ( circle ( pt *n:Player#4 ) *n:Num#5 ) ) ) }) weight 0.0
+*n:Player -> ({ *n:Unum#1 *g:1 *n:Unum#2 *g:1 *n:Unum#3 should })({ ( player our { *n:Unum#1 *n:Unum#2 *n:Unum#3 } ) }) weight 0.0
+*n:Condition -> ({ *n:Ident#1 })({ " *n:Ident#1 " }) weight 0.0
+*n:Action -> ({ pass *g:1 *n:Player#1 })({ ( pass *n:Player#1 ) }) weight 0.0
+*n:Region -> ({ *n:Num#2 *g:1 *n:Num#3 from *n:Team#1 line })({ ( from-goal-line *n:Team#1 *n:Num#2 *n:Num#3 ) }) weight -8.850112723674081E-4
+*n:Rule -> ({ *t:Bound *g:2 ball is at *g:1 *n:Region#1 then position *n:Player#2 at *n:Region#3 *t:Bound })({ ( ( bpos *n:Region#1 ) ( do *n:Player#2 ( pos *n:Region#3 ) ) ) }) weight 0.009440442243344624
+*n:Point -> ({ *n:Num#1 , *n:Num#2 })({ ( pt *n:Num#1 *n:Num#2 ) }) weight -0.07319557446683969
+*n:Rule -> ({ *t:Bound Set *n:Player#1 *g:3 within *n:Num#4 *g:1 from *n:Point#2 *g:1 ball attraction *g:1 *n:Point#3 *t:Bound })({ ( ( true ) ( do *n:Player#1 ( home ( circle ( pt-with-ball-attraction *n:Point#2 *n:Point#3 ) *n:Num#4 ) ) ) ) }) weight 0.0
+*n:Directive -> ({ position *g:1 *n:Player#1 at *n:Region#2 })({ ( do *n:Player#1 ( pos *n:Region#2 ) ) }) weight 0.0607971070533228
+*n:Condition -> ({ our })({ ( playm gc_our ) }) weight 0.0
+*n:Rule -> ({ *t:Bound If *g:2 *n:Condition#1 *g:3 *n:Directive#2 *t:Bound })({ ( *n:Condition#1 *n:Directive#2 ) }) weight -0.6986974060923531
+*n:Point -> ({ *n:Point#1 with *g:1 attraction *g:1 *n:Point#2 })({ ( pt-with-ball-attraction *n:Point#1 *n:Point#2 ) }) weight 7.29531586242931E-4
+*n:Action -> ({ pass *g:2 to *n:Player#1 })({ ( pass *n:Player#1 ) }) weight -0.08044802902617214
+*n:Rule -> ({ *t:Bound If *n:Player#1 has *g:1 ball *g:1 *n:Player#2 *g:1 *n:Action#3 *t:Bound })({ ( ( bowner *n:Player#1 ) ( do *n:Player#2 *n:Action#3 ) ) }) weight 0.08045619174634644
+*n:Directive -> ({ position *n:Player#1 at *g:1 *n:Region#2 })({ ( do *n:Player#1 ( pos *n:Region#2 ) ) }) weight 0.029605392395786145
+*n:Num -> ({ During })({ 0.00 }) weight 0.0
+*n:Point -> ({ or })({ ( pt ball ) }) weight 0.0
+*n:Region -> ({ normal play })({ ( midfield ) }) weight 0.0
+*n:Condition -> ({ meters *g:1 front })({ ( playm play_on ) }) weight 0.0
+*n:Rule -> ({ *t:Bound *n:Num#8 *g:1 *n:Region#2 *g:1 if *g:3 in *g:4 *n:Unum#3 , *n:Unum#4 *n:Point#6 *n:Unum#5 should dribble to *g:1 point *n:Num#7 *n:Condition#1 of *g:1 ball *t:Bound })({ ( ( and *n:Condition#1 ( bpos *n:Region#2 ) ) ( do ( player our { *n:Unum#3 *n:Unum#4 *n:Unum#5 } ) ( dribble ( *n:Point#6 + ( pt *n:Num#7 *n:Num#8 ) ) ) ) ) }) weight 0.0
+*n:Action -> ({ position *g:1 *n:Region#1 })({ ( pos *n:Region#1 ) }) weight 0.0
+*n:Directive -> ({ then *n:Player#1 *g:1 *n:Action#2 })({ ( do *n:Player#1 *n:Action#2 ) }) weight 1.0000056662412196
+*n:Point -> ({ *n:Num#2 meters *g:3 our *n:Team#1 })({ ( from-goal *n:Team#1 *n:Num#2 ) }) weight -0.05679753296913689
+*n:Rule -> ({ *t:Bound If *g:3 *n:Condition#1 *g:1 *n:Directive#2 *g:1 *t:Bound })({ ( *n:Condition#1 *n:Directive#2 ) }) weight 0.045562225349126635
+*n:Player -> ({ should })({ ( player our { X } ) }) weight -0.8863823584932616
+*n:Rule -> ({ *t:Bound If *g:1 of *g:2 *n:Player#3 *g:6 *n:Condition#2 then *g:1 *n:Player#1 clear *g:1 ball *g:1 *n:Region#4 *t:Bound })({ ( ( and ( bowner *n:Player#1 ) *n:Condition#2 ) ( do *n:Player#3 ( clear *n:Region#4 ) ) ) }) weight 0.06068774681062063
+*n:Region -> ({ rectangle *n:Point#1 *g:1 *n:Point#2 })({ ( rec *n:Point#1 *n:Point#2 ) }) weight -0.001032810187685466
+*n:Action -> ({ go *g:2 *n:Region#1 })({ ( pos *n:Region#1 ) }) weight 0.3706074801961883
+*n:Point -> ({ *n:Num#1 , *n:Num#2 -RRB- })({ ( pt *n:Num#1 *n:Num#2 ) }) weight -0.23728348129085297
+*n:Action -> ({ all })({ ( shoot ) }) weight 0.0
+*n:Directive -> ({ *n:Action#2 *g:2 then *g:1 *n:Player#1 })({ ( do *n:Player#1 *n:Action#2 ) }) weight 0.0
+*n:Condition -> ({ *n:Condition#1 , *n:Condition#2 , *n:Condition#3 , *n:Condition#4 , *n:Condition#5 and *n:Condition#6 })({ ( not ( or *n:Condition#1 *n:Condition#2 *n:Condition#3 *n:Condition#4 *n:Condition#5 *n:Condition#6 ) ) }) weight 0.0
+*n:Rule -> ({ *t:Bound If *n:Condition#1 *g:1 *n:Directive#2 *g:1 *t:Bound })({ ( *n:Condition#1 *n:Directive#2 ) }) weight 0.08935809249253944
+*n:Region -> ({ *n:Num#2 *g:1 *n:Num#3 meters from *g:1 *n:Team#1 goal line })({ ( from-goal-line *n:Team#1 *n:Num#2 *n:Num#3 ) }) weight 0.5249554672099761
+*n:Directive -> ({ then *g:1 *n:Unum#1 *g:1 *n:Unum#2 *n:Action#3 })({ ( do ( player-range our *n:Unum#1 *n:Unum#2 ) *n:Action#3 ) }) weight 0.2110131225485087
+*n:Action -> ({ should pass *g:3 *n:Region#1 })({ ( pass ( right *n:Region#1 ) ) }) weight -0.42955448613490127
+*n:Team -> ({ opponent })({ opp }) weight 0.2779951171846076
+*n:Region -> ({ *n:Team#1 *g:2 penalty area })({ ( penalty-area *n:Team#1 ) }) weight 0.8918060141587427
+*n:Statement -> ({ *t:Bound Let *n:Region#2 be *g:1 *n:Ident#1 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Let *g:1 *n:Region#2 be *g:1 *n:Ident#1 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.0
+*n:Statement -> ({ *t:Bound *g:3 *n:Region#2 *g:1 be *n:Ident#1 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Let *g:2 *n:Region#2 be *g:1 *n:Ident#1 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Let *g:3 *n:Region#2 be *g:1 *n:Ident#1 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Let *g:2 *n:Region#2 *g:1 be *g:1 *n:Ident#1 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.0
+*n:Region -> ({ *n:Team#1 *g:1 half })({ ( half *n:Team#1 ) }) weight 4.430855572174249E-5
+*n:Statement -> ({ *t:Bound Let *n:Ident#1 be *g:2 *n:Region#2 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.028074225312926533
+*n:Region -> ({ as *g:2 quarter *g:2 area near *n:Team#1 line })({ ( near-goal-line *n:Team#1 ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Define *n:Ident#1 *n:Region#2 *t:Bound })({ ( definer " *n:Ident#1 " ( right-quarter *n:Region#2 ) ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Define *n:Ident#1 *g:3 *n:Region#2 *t:Bound })({ ( definer " *n:Ident#1 " ( right-quarter *n:Region#2 ) ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Define *n:Ident#1 *n:Region#2 *g:1 *t:Bound })({ ( definer " *n:Ident#1 " ( right-quarter *n:Region#2 ) ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Define *n:Ident#1 as *g:2 quarter *g:2 area near *n:Team#2 line *t:Bound })({ ( definer " *n:Ident#1 " ( right-quarter ( near-goal-line *n:Team#2 ) ) ) }) weight 0.0
+*n:Region -> ({ -LSB- -LRB- *n:Point#1 *g:1 *n:Point#2 -RSB- *g:1 *n:Region#3 })({ ( reg ( rec *n:Point#1 *n:Point#2 ) *n:Region#3 ) }) weight 0.0
+*n:Statement -> ({ *t:Bound Call *n:Ident#1 *g:2 *n:Region#2 *t:Bound })({ ( definer " *n:Ident#1 " *n:Region#2 ) }) weight 0.026406980717805603
+*n:Region -> ({ as *g:1 left quarter *g:2 area near *n:Team#1 *g:2 line })({ ( left-quarter ( near-goal-line *n:Team#1 ) ) }) weight 0.3867858996134191
+*n:Region -> ({ -LSB- *n:Point#1 *g:1 *n:Point#2 -RSB- })({ ( rec *n:Point#1 *n:Point#2 ) }) weight -6.395262710804063E-15
+*n:Region -> ({ side *g:1 *n:Region#1 })({ ( right *n:Region#1 ) }) weight 0.0
+*n:Team -> ({ from our })({ our }) weight -0.022333733447631378
+*n:Region -> ({ circle *g:1 *n:Num#2 *g:4 *n:Point#1 })({ ( circle *n:Point#1 *n:Num#2 ) }) weight -0.016378084913638152
+*n:Region -> ({ within *n:Num#2 *g:1 from *g:1 *n:Point#1 })({ ( circle *n:Point#1 *n:Num#2 ) }) weight 0.024335378341634663
+*n:Point -> ({ point -LRB- *n:Num#1 *g:1 *n:Num#2 -RRB- })({ ( pt *n:Num#1 *n:Num#2 ) }) weight -0.03599206915460536

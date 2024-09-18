@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<!DOCTYPE examples [
+  <!ELEMENT examples (example*)>
+  <!ELEMENT example (nl*,syn*,augsyn*,mrl*,mrl-parse?,parse*)>
+  <!ELEMENT nl (#PCDATA)>
+  <!ELEMENT syn (#PCDATA)>
+  <!ELEMENT augsyn (#PCDATA)>
+  <!ELEMENT mrl (#PCDATA)>
+  <!ELEMENT mrl-parse (node*)>
+  <!ELEMENT node (#PCDATA)>
+  <!ELEMENT parse (#PCDATA)>
+]>
+<examples>
+
+<example id="19">
+<nl lang="en">
+Call the condition where players 10 and 11 are not the ball owner to be COND9
+</nl>
+</example>
+
+<example id="85">
+<nl lang="en">
+If the ball is in opponent 's left penalty area , then all players except the goalie should pass the ball to opponent 's right penalty area
+</nl>
+<parse rank="0" score="5.638817971768115">
+(definerule RULE direc ((bpos (penalty-area opp)) (do (player-except our {1}) (pass (penalty-area opp)))))
+</parse>
+<!--
+*r:*n:Statement_->_({_*n:Rule#1_})({_*n:Rule#1_})
+  *r:*n:Rule_->_({_*t:Bound_If_*g:1_ball_is_*n:Unum#2_*n:Region#1_*g:1_then_all_players_except_*g:2_*n:Action#3_*t:Bound_})({_(_(_bpos_*n:Region#1_)_(_do_(_player-except_our_{_*n:Unum#2_}_)_*n:Action#3_)_)_})
+    *r:*n:Unum_->_({_in_})({_1_})
+    *r:*n:Region_->_({_*n:Team#1_*g:2_penalty_area_})({_(_penalty-area_*n:Team#1_)_})
+      *r:*n:Team_->_({_opponent_})({_opp_})
+    *r:*n:Action_->_({_should_pass_*g:3_*n:Region#1_})({_(_pass_*n:Region#1_)_})
+      *r:*n:Region_->_({_*n:Team#1_*g:2_penalty_area_})({_(_penalty-area_*n:Team#1_)_})
+        *r:*n:Team_->_({_opponent_})({_opp_})
+-->
+</example>
+
+<example id="112">
+<nl lang="en">
+The default position of player 4 should always be -LRB- -20 , 8 -RRB-
+</nl>
+</example>
+
+<example id="135">
+<nl lang="en">
+During normal play when the ball is in the region MDR7 then player 7 should pass it to the left side of opponent 's penalty area
+</nl>
+</example>
+
+<example id="150">
+<nl lang="en">
+If the ball is at distance 42 to 47 from opponent 's goal line then position player 5 at 47 meters from opponent 's goal
+</nl>
+</example>
+
+<example id="157">
+<nl lang="en">
+If the ball is in opponent 's penalty area then whoever has the ball should shoot
+</nl>
+</example>
+
+<example id="188">
+<nl lang="en">
+Let COND8 be the true condition
+</nl>
+</example>
+
+<example id="192">
+<nl lang="en">
+If the ball is present in the region RP10 then players 2 - 11 should pass it to the region RP5
+</nl>
+</example>
+
+<example id="195">
+<nl lang="en">
+If the ball is in our goal area then player 1 should intercept it
+</nl>
+</example>
+
+<example id="216">
+<nl lang="en">
+When the play mode is normal and the ball is in the region MDR11 then our player 2 should pass the ball to the opponent 's penalty area
+</nl>
+</example>
+
+<example id="266">
+<nl lang="en">
+If the ball is in the opponent 's half , position player 7 at 37 meters from the opponent 's goal with ball attraction -LRB- 0.5 , 0.4 -RRB-
+</nl>
+</example>
+
+<example id="279">
+<nl lang="en">
+If the ball is in the opponent 's half , position our player 7 at -LRB- -20 , 7 -RRB- with ball attraction -LRB- 0.5 , 0.3 -RRB-
+</nl>
+<parse rank="0" score="7.210981846574346">
+(definerule RULE direc ((bpos (half opp)) (do (player our {7}) (pos (pt-with-ball-attraction (pt -20 7) (pt 0.5 0.3))))))
+</parse>
+<!--
+*r:*n:Statement_->_({_*n:Rule#1_})({_*n:Rule#1_})
+  *r:*n:Rule_->_({_*t:Bound_If_*g:3_*n:Condition#1_*g:1_*n:Directive#2_*g:1_*t:Bound_})({_(_*n:Condition#1_*n:Directive#2_)_})
+    *r:*n:Condition_->_({_in_*g:2_*n:Region#1_})({_(_bpos_*n:Region#1_)_})
+      *r:*n:Region_->_({_*n:Team#1_*g:1_half_})({_(_half_*n:Team#1_)_})
+        *r:*n:Team_->_({_opponent_})({_opp_})
+    *r:*n:Directive_->_({_position_*g:1_*n:Player#1_at_*n:Region#2_})({_(_do_*n:Player#1_(_pos_*n:Region#2_)_)_})
+      *r:*n:Player_->_({_player_*n:Unum#1_})({_(_player_our_{_*n:Unum#1_}_)_})
+        *r:*n:Unum_->_({_7_})({_7_})
+      *r:*n:Region_->_({_*n:Point#1_})({_*n:Point#1_})
+        *r:*n:Point_->_({_*n:Point#1_with_*g:1_attraction_*g:1_*n:Point#2_})({_(_pt-with-ball-attraction_*n:Point#1_*n:Point#2_)_})
+          *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+            *r:*n:Num_->_({_-20_})({_-20_})
+            *r:*n:Num_->_({_7_})({_7_})
+          *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+            *r:*n:Num_->_({_0.5_})({_0.5_})
+            *r:*n:Num_->_({_0.3_})({_0.3_})
+-->
+</example>
+
+<example id="318">
+<nl lang="en">
+If the ball is 7 to 11 meters from the opponent 's goal line , position our player 3 at -LRB- 40 , -21 -RRB-
+</nl>
+<parse rank="0" score="10.844361157369544">
+(definerule RULE direc ((bpos (from-goal-line opp 7 11)) (do (player our {3}) (pos (pt 40 -21)))))
+</parse>
+<!--
+*r:*n:Statement_->_({_*n:Rule#1_})({_*n:Rule#1_})
+  *r:*n:Rule_->_({_*t:Bound_If_*g:3_*n:Condition#1_*g:1_*n:Directive#2_*g:1_*t:Bound_})({_(_*n:Condition#1_*n:Directive#2_)_})
+    *r:*n:Condition_->_({_is_*n:Region#1_})({_(_bpos_*n:Region#1_)_})
+      *r:*n:Region_->_({_*n:Num#2_*g:1_*n:Num#3_meters_from_*g:1_*n:Team#1_goal_line_})({_(_from-goal-line_*n:Team#1_*n:Num#2_*n:Num#3_)_})
+        *r:*n:Num_->_({_7_})({_7_})
+        *r:*n:Num_->_({_11_})({_11_})
+        *r:*n:Team_->_({_opponent_'s_})({_opp_})
+    *r:*n:Directive_->_({_position_*g:1_*n:Player#1_at_*n:Region#2_})({_(_do_*n:Player#1_(_pos_*n:Region#2_)_)_})
+      *r:*n:Player_->_({_player_*n:Unum#1_})({_(_player_our_{_*n:Unum#1_}_)_})
+        *r:*n:Unum_->_({_3_})({_3_})
+      *r:*n:Region_->_({_*n:Point#1_})({_*n:Point#1_})
+        *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+          *r:*n:Num_->_({_40_})({_40_})
+          *r:*n:Num_->_({_-21_})({_-21_})
+-->
+</example>
+
+<example id="320">
+<nl lang="en">
+If the ball is within 32 meters from our goal line , and the ball is not in our left penalty area , player 5 should not intercept the ball
+</nl>
+</example>
+
+<example id="347">
+<nl lang="en">
+If the ball is in the far right corner , our players except the goalie should pass the ball to the right side of the opponent 's penalty area
+</nl>
+</example>
+
+<example id="353">
+<nl lang="en">
+Let Free_Kick_mod be the condition where the play mode is our kick in , corner kick , free kick , goalie 's kick , or kick off
+</nl>
+</example>
+
+<example id="373">
+<nl lang="en">
+If it is before kick off , after our goal or after opponent 's goal , position player 7 at 27 meters from our goal
+</nl>
+</example>
+
+<example id="388">
+<nl lang="en">
+Let CloseToBall_4 be the condition where the ball is within 6 meters of our player 4
+</nl>
+</example>
+
+<example id="390">
+<nl lang="en">
+If it is playon mode and the ball is in MDR8 , player 4 should pass to the right side of opponent 's penalty area
+</nl>
+</example>
+
+<example id="400">
+<nl lang="en">
+If the ball is within 37 meters to our goal line , player 9 should position itself at -LRB- -15 , 4 -RRB- with ball attraction -LRB- 0.5 , 0.1 -RRB-
+</nl>
+</example>
+
+<example id="401">
+<nl lang="en">
+If DR2C7 is true then players 2 , 3 , 7 and 8 should pass to player 4
+</nl>
+</example>
+
+<example id="408">
+<nl lang="en">
+Call DR2C9 as the condition that the ball is in D2R2 and our player 9 is on the left side of our midfield and no opponents are within 1.5 m of our player 9
+</nl>
+</example>
+
+<example id="417">
+<nl lang="en">
+Let Pass_10 be the condition that our player 10 has the ball and it is in Pass_region_10
+</nl>
+</example>
+
+<example id="420">
+<nl lang="en">
+If the ball is in RP8 then players 2 - 11 should pass to someone in RP15
+</nl>
+<parse rank="0" score="7.732622495116829">
+(definerule RULE direc ((bpos "RP8") (do (player-range our 2 11) (pass "RP15"))))
+</parse>
+<!--
+*r:*n:Statement_->_({_*n:Rule#1_})({_*n:Rule#1_})
+  *r:*n:Rule_->_({_*t:Bound_If_*g:3_*n:Condition#1_*g:1_*n:Directive#2_*g:1_*t:Bound_})({_(_*n:Condition#1_*n:Directive#2_)_})
+    *r:*n:Condition_->_({_is_in_*n:Region#1_})({_(_bpos_*n:Region#1_)_})
+      *r:*n:Region_->_({_*n:Ident#1_})({_"_*n:Ident#1_"_})
+        *r:*n:Ident_->_({_RP8_})({_RP8_})
+    *r:*n:Directive_->_({_then_*g:1_*n:Unum#1_*g:1_*n:Unum#2_*n:Action#3_})({_(_do_(_player-range_our_*n:Unum#1_*n:Unum#2_)_*n:Action#3_)_})
+      *r:*n:Unum_->_({_2_})({_2_})
+      *r:*n:Unum_->_({_11_})({_11_})
+      *r:*n:Action_->_({_should_pass_*g:3_*n:Region#1_})({_(_pass_*n:Region#1_)_})
+        *r:*n:Region_->_({_*n:Ident#1_})({_"_*n:Ident#1_"_})
+          *r:*n:Ident_->_({_RP15_})({_RP15_})
+-->
+</example>
+
+<example id="423">
+<nl lang="en">
+If the ball is at a distance of 47 to 51 from the opponent 's goal line then player 7 should go to -LRB- 0 , 11 -RRB-
+</nl>
+</example>
+
+<example id="468">
+<nl lang="en">
+If the ball is in the left quarter of the midfield then player 4 should intercept it
+</nl>
+</example>
+
+<example id="501">
+<nl lang="en">
+Call left quarter of opponent 's midfield as DangrouseReg14
+</nl>
+</example>
+
+<example id="526">
+<nl lang="en">
+Call the rectangles -LSB- -LRB- 32 , 18 -RRB- , -LRB- 52.5 , -34 -RRB- -RSB- or -LSB- -LRB- 48 , 9 -RRB- , -LRB- 52.5 , 18 -RRB- -RSB- to be Pass_region_10
+</nl>
+<parse rank="0" score="11.424772757695216">
+(definer "Pass_region_10" (reg (rec (pt 32 18) (pt 52.5 -34)) (rec (pt 48 9) (pt 52.5 18))))
+</parse>
+<!--
+*r:*n:Statement_->_({_*t:Bound_*g:3_*n:Region#2_*g:1_be_*n:Ident#1_*t:Bound_})({_(_definer_"_*n:Ident#1_"_*n:Region#2_)_})
+  *r:*n:Region_->_({_-LSB-_-LRB-_*n:Point#1_*g:1_*n:Point#2_-RSB-_*g:1_*n:Region#3_})({_(_reg_(_rec_*n:Point#1_*n:Point#2_)_*n:Region#3_)_})
+    *r:*n:Point_->_({_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+      *r:*n:Num_->_({_32_})({_32_})
+      *r:*n:Num_->_({_18_})({_18_})
+    *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+      *r:*n:Num_->_({_52.5_})({_52.5_})
+      *r:*n:Num_->_({_-34_})({_-34_})
+    *r:*n:Region_->_({_-LSB-_*n:Point#1_*g:1_*n:Point#2_-RSB-_})({_(_rec_*n:Point#1_*n:Point#2_)_})
+      *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+        *r:*n:Num_->_({_48_})({_48_})
+        *r:*n:Num_->_({_9_})({_9_})
+      *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+        *r:*n:Num_->_({_52.5_})({_52.5_})
+        *r:*n:Num_->_({_18_})({_18_})
+  *r:*n:Ident_->_({_Pass\_region\_10_})({_Pass\_region\_10_})
+-->
+</example>
+
+<example id="533">
+<nl lang="en">
+Let RP8 be the rectangle -LSB- -LRB- -35 , 0 -RRB- , -LRB- -17.5 , 17 -RRB- -RSB-
+</nl>
+<parse rank="0" score="4.052337559064236">
+(definer "RP8" (rec (pt -35 0) (pt -17.5 17)))
+</parse>
+<!--
+*r:*n:Statement_->_({_*t:Bound_Let_*n:Ident#1_be_*g:2_*n:Region#2_*t:Bound_})({_(_definer_"_*n:Ident#1_"_*n:Region#2_)_})
+  *r:*n:Ident_->_({_RP8_})({_RP8_})
+  *r:*n:Region_->_({_-LSB-_*n:Point#1_*g:1_*n:Point#2_-RSB-_})({_(_rec_*n:Point#1_*n:Point#2_)_})
+    *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+      *r:*n:Num_->_({_-35_})({_-35_})
+      *r:*n:Num_->_({_0_})({_0_})
+    *r:*n:Point_->_({_-LRB-_*n:Num#1_,_*n:Num#2_-RRB-_})({_(_pt_*n:Num#1_*n:Num#2_)_})
+      *r:*n:Num_->_({_-17.5_})({_-17.5_})
+      *r:*n:Num_->_({_17_})({_17_})
+-->
+</example>
+
+<example id="557">
+<nl lang="en">
+Call the opponent 's left penalty area to be RP12
+</nl>
+<parse rank="0" score="4.949398120835413">
+(definer "RP12" (penalty-area opp))
+</parse>
+<!--
+*r:*n:Statement_->_({_*t:Bound_*g:3_*n:Region#2_*g:1_be_*n:Ident#1_*t:Bound_})({_(_definer_"_*n:Ident#1_"_*n:Region#2_)_})
+  *r:*n:Region_->_({_*n:Team#1_*g:2_penalty_area_})({_(_penalty-area_*n:Team#1_)_})
+    *r:*n:Team_->_({_opponent_})({_opp_})
+  *r:*n:Ident_->_({_RP12_})({_RP12_})
+-->
+</example>
+
+</examples>
